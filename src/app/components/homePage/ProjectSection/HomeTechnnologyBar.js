@@ -13,7 +13,7 @@ import { IoLogoCss3 } from "react-icons/io";
 
 
 
-export default function TechnologyBar({ stack, full }) {
+export default function HomeTechnologyBar({ stack, full }) {
     
     // State Vars for Technologies
     const [python, setPython] = useState(false)

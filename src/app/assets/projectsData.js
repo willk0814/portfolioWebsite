@@ -6,7 +6,8 @@ export const projectsData = {
         demo_link: '',
         video_id: 'vc_H3_WQKBI',
         stack: ['JS', 'CSS', 'ReactNative'],
-        status: 'working'
+        status: 'working',
+        link: '/work/deviceController'
         },
     'project_2': {
         title: 'Just Notes',
@@ -15,7 +16,8 @@ export const projectsData = {
         demo_link: '',
         video_id: 'CeKzDVw-Dqg',
         stack: ['JS', 'React', 'MongoDB', 'tailwind', 'Express', 'Mongoose', 'node'],
-        status: 'working'
+        status: 'working',
+        link: '/work/justNotes'
         },
     'project_3' : {
         title: 'Pathfinder',
@@ -24,7 +26,8 @@ export const projectsData = {
         demo_link: 'https://willk0814.github.io/pathfinder/',
         video_id: 'zNvEhUeH3Mg',
         stack: ['TS', 'JS', 'React', 'tailwind', 'node'],
-        status: 'working'
+        status: 'working',
+        link: '/work/pathfinder'
         },
     'project_4': {
         title: 'Written Numbers',
@@ -33,7 +36,8 @@ export const projectsData = {
         demo_link: '',
         video_id: '',
         stack: ['Python', 'NumPy', 'Jupyter'],
-        status: 'working'
+        status: 'working',
+        link: '/work/writtenNumbers'
         },
     'project_6': {
         title: 'Airline Upgrade System',
@@ -42,7 +46,8 @@ export const projectsData = {
         demo_link: '',
         video_id: 'oVP-xKiiJJ0',
         stack: ['Python'],
-        status: 'completed'
+        status: 'completed',
+        link: '/work/airlineUpgradeSystem'
         },
     'project_7': {
         title: 'Sorting Visualizer',
@@ -51,7 +56,8 @@ export const projectsData = {
         demo_link: 'https://willk0814.github.io/sorting_visualizer/',
         video_id: 'Xa8D1WPD8_I',
         stack: ['React', 'JS', 'tailwind', 'node'],
-        status: 'completed'
+        status: 'completed',
+        link: '/work/sortingVisualizer'
         },
     'project_8': {
         title: 'Command Line 2048',
@@ -60,7 +66,8 @@ export const projectsData = {
         demo_link: '',
         video_id: 'Lxy7WBOGsNw',
         stack: ['Python'],
-        status: 'completed'
+        status: 'completed',
+        link: '/work/2048'
         },
     'project_9': {
         title: 'Personal Portfolio',
@@ -69,7 +76,8 @@ export const projectsData = {
         demo_link: 'https://willk0814.github.io/portfolio',
         video_id: '',
         stack: ['JS', 'React', 'node', 'tailwind', 'framer'],
-        status: 'working'
+        status: 'working',
+        link: '/work/portfolio'
         },
     'project_10': {
         title: 'Space Invaders',
@@ -78,6 +86,7 @@ export const projectsData = {
         demo_link: '',
         video_id: '',
         stack: ['JS', 'CSS', 'HTML'],
-        status: 'completed'
+        status: 'completed',
+        link: '/work/spaceInvaders'
         }
     }

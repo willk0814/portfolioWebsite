@@ -1,6 +1,8 @@
-import Navbar from './components/navbar/Navbar';
+
 import { Noto_Sans_Mono } from 'next/font/google'
 import "./globals.css";
+import Footer from './components/homeLayout/Footer';
+import SecondFooter from './components/secondaryLayout/SecondaryFooter';
 
 const noto = Noto_Sans_Mono({ subsets: ["latin"], weight: '400' });
 
@@ -13,7 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={noto.className}>
-        <Navbar />
         {children}
       </body>
     </html>

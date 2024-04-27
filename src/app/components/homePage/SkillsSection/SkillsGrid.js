@@ -26,7 +26,7 @@ export default function SkillsGrid() {
     <div className='flex flex-wrap items-center justify-center w-[95vw] max-w-[800px]'>
         
         <div className='bg-blue-600 p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-green-400'>Languages</h1>  
+            <h1 className='text-[2rem] text-[#A1E5AB]'>Languages</h1>  
         </div>
 
         <div className='bg-blue-600 p-2 rounded-lg m-1 flex flex-grow'>
@@ -54,7 +54,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='bg-blue-600 p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-green-400'>Front End</h1>  
+            <h1 className='text-[2rem] text-[#A1E5AB]'>Front End</h1>  
         </div>
 
         <div className='bg-blue-600 p-2 rounded-lg m-1 flex flex-grow'>
@@ -82,7 +82,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='bg-blue-600 p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-green-400'>Back End</h1>  
+            <h1 className='text-[2rem] text-[#A1E5AB]'>Back End</h1>  
         </div>
 
         <div className='bg-blue-600 p-2 rounded-lg m-1 flex flex-grow'>
@@ -102,7 +102,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='bg-blue-600 p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-green-400'>Databasing</h1>  
+            <h1 className='text-[2rem] text-[#A1E5AB]'>Databasing</h1>  
         </div>
 
         <div className='bg-blue-600 p-2 rounded-lg m-1 flex flex-grow'>
@@ -118,7 +118,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='bg-blue-600 p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-green-400'>AI/ML</h1>  
+            <h1 className='text-[2rem] text-[#A1E5AB]'>AI/ML</h1>  
         </div>
 
         <div className='bg-blue-600 p-2 rounded-lg m-1 flex flex-grow'>
