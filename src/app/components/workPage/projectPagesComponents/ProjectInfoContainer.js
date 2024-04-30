@@ -38,7 +38,7 @@ export default function ProjectInfoContainer({ projectData }) {
         }}
     
     const lgPlayerOpts = {
-        height: '400px',
+        height: '600px',
         width: '800px',
         playerVars: {
             autoplay: 1,

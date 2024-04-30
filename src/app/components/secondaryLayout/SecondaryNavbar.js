@@ -18,7 +18,7 @@ export default function SecondaryNavbar() {
                     <h1 className='text-xl sm:text-3xl text-blue-600'>Will Koenig</h1>
                 </Link>
 
-                <div className='flex flex-row space-x-4'>
+                <div className='flex flex-row space-x-1'>
                     <motion.div
                         variants={{
                             initial: { background: '#E8E8E8' },
@@ -30,7 +30,7 @@ export default function SecondaryNavbar() {
                         className='rounded-lg flex'>
                         <Link
                             href={'/work'}
-                            className='p-1'>
+                            className='px-2 py-1'>
                             <h1 className='text-xl text-blue-600'>Work</h1>
                         </Link>
                     </motion.div>
@@ -46,7 +46,7 @@ export default function SecondaryNavbar() {
                         className='rounded-lg flex'>
                         <Link
                             href={'/notes'}
-                            className='p-1'>
+                            className='px-2 py-1'>
                             <h1 className='text-xl text-blue-600'>Notes</h1>
                         </Link>
                     </motion.div>
@@ -62,7 +62,7 @@ export default function SecondaryNavbar() {
                         className='rounded-lg flex'>
                         <Link
                             href={'/contactMe'}
-                            className='p-1'>
+                            className='px-2 py-1'>
                             <h1 className='text-xl text-blue-600'>Contact</h1>
                         </Link>
                     </motion.div>

@@ -16,7 +16,7 @@ export default function page() {
           animate='animate'
           className='flex items-center flex-col bg-blue-600 rounded-lg p-4 w-[95vw] max-w-[750px] space-y-3 mt-10'>
           <div className='w-full flex justify-start'>
-            <h1 className='text-4xl sm:text-6xl text-[#E8E8E8] mb-5 text-start font-bold'>Let's talk</h1>
+            <h1 className='text-4xl sm:text-6xl text-[#A1E5AB] mb-5 text-start font-bold'>Let's talk</h1>
           </div>
 
           <div className='flex flex-col w-full items-start space-y-1'>
@@ -42,9 +42,13 @@ export default function page() {
               className='resize-none rounded-lg h-[60vh] max-h-[325px] bg-[#E8E8E8] text-xl text-blue-600 p-2'/>
           </div>
           
-          <button className='bg-green-500 rounded-lg flex justify-center w-fit p-6 px-10'>
+          <motion.button 
+            className='bg-[#A1E5AB] rounded-lg flex justify-center w-fit p-6 px-10'
+            whileHover={{
+              scaleX: 1.2
+            }}>
               <h1 className='text-blue-600 font-extrabold text-3xl'>Send</h1>
-          </button>
+          </motion.button>
         </motion.div>
     </div>
   )
