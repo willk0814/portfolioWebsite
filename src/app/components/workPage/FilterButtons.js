@@ -1,29 +1,75 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
 
-export default function FilterButtons() {
+export default function FilterButtons({ filterSettings, selectFilter}) {
   return (
-    <div className='flex flex-row'>
+    <motion.div 
+        variants={{
+            initial:  { opacity: 0 },
+            animate: { opacity: 1 ,
+                transition: {
+                    when: 'beforeChildren',
+                    staggerChildren: 0.2
+                }}
+        }}
+        initial= 'initial'
+        animate='animate'
+        className='flex flex-row space-x-2'>
 
-        <button
-            className='border-2 border-blue-600 rounded-lg text-blue-600 text-lg p-1 m-2'>
-            Full Stack
-        </button>
+
+            <motion.button
+                variants={{
+                    initial: { opacity: 0, y: '-20%'},
+                    animate: { opacity: 1, y: 0,
+                        transition: {
+                            duration: 0.6
+                        }},
+                }}
+                className={`${filterSettings['fullStack']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                onClick={() => selectFilter('fullStack')}>
+                Full Stack
+            </motion.button>
+            
+            <motion.button
+                variants={{
+                    initial: { opacity: 0, y: '-20%'},
+                    animate: { opacity: 1, y: 0,
+                        transition: {
+                            duration: 0.6
+                        }}
+                }}
+                className={`${filterSettings['ML']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                onClick={() => selectFilter('ML')}>
+                ML/AI
+            </motion.button>
+            
+            <motion.button
+                variants={{
+                    initial: { opacity: 0, y: '-20%'},
+                    animate: { opacity: 1, y: 0,
+                        transition: {
+                            duration: 0.6
+                        }}
+                }}
+                className={`${filterSettings['webDev']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                onClick={() => selectFilter('webDev')}>
+                Web Dev
+            </motion.button>
+            
+            <motion.button
+                variants={{
+                    initial: { opacity: 0, y: '-20%'},
+                    animate: { opacity: 1, y: 0,
+                        transition: {
+                            duration: 0.6
+                        }}
+                }}
+                className={`${filterSettings['others']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                onClick={() => selectFilter('others')}>
+                Others
+            </motion.button>
         
-        <button
-            className='border-2 border-blue-600 rounded-lg text-blue-600 text-lg p-1 m-2'>
-            ML/AI
-        </button>
-
-        <button
-            className='border-2 border-blue-600 rounded-lg text-blue-600 text-lg p-1 m-2'>
-            Web Dev
-        </button>
-
-        <button
-            className='border-2 border-blue-600 rounded-lg text-blue-600 text-lg p-1 m-2'>
-            Others
-        </button>
-        
-    </div>
+    </motion.div>
   )
 }

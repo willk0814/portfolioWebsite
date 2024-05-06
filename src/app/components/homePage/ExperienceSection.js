@@ -21,15 +21,15 @@ function ExperienceCard({ exp_id, experienceData, expanded, handleExpand }) {
 
   return (
     <div 
-        className='bg-blue-600 rounded-lg p-2 max-w-[800px] flex flex-col w-[95vw] m-1'>
+        className='bg-blue-600 rounded-lg p-2 max-w-[800px] flex flex-col w-[95vw] m-1 cursor-pointer'
+        onClick={() => handleExpand(exp_id)}>
         <div className='flex flex-row justify-between'>
             <h1 className='text-xl sm:text-4xl text-[#E8E8E8]'>{experienceData.company}</h1>
             <motion.div
                 className='flex w-fit h-fit cursor-pointer'
                 variants={iconVariants}
                 initial='initial'
-                animate={expanded ? 'expanded' : ''}
-                onClick={() => handleExpand(exp_id)}>
+                animate={expanded ? 'expanded' : ''}>
                 <FaArrowCircleDown size={35} color='#E8E8E8'/>
             </motion.div>
         </div>

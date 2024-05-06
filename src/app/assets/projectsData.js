@@ -7,7 +7,8 @@ export const projectsData = {
         video_id: 'vc_H3_WQKBI',
         stack: ['JS', 'CSS', 'ReactNative'],
         status: 'working',
-        link: '/work/deviceController'
+        link: '/work/deviceController',
+        image_link: '/projCoverPhotos/deviceController.png'
         },
     'project_2': {
         title: 'Just Notes',
@@ -17,7 +18,8 @@ export const projectsData = {
         video_id: 'CeKzDVw-Dqg',
         stack: ['JS', 'React', 'MongoDB', 'tailwind', 'Express', 'Mongoose', 'node'],
         status: 'working',
-        link: '/work/justNotes'
+        link: '/work/justNotes',
+        image_link: '/projCoverPhotos/notepad.jpg'
         },
     'project_3' : {
         title: 'Pathfinder',
@@ -26,8 +28,9 @@ export const projectsData = {
         demo_link: 'https://willk0814.github.io/pathfinder/',
         video_id: 'zNvEhUeH3Mg',
         stack: ['TS', 'JS', 'React', 'tailwind', 'node'],
-        status: 'working',
-        link: '/work/pathfinder'
+        status: 'completed',
+        link: '/work/pathfinder',
+        image_link: '/projCoverPhotos/pathfinder.png'
         },
     'project_4': {
         title: 'Written Numbers',
@@ -36,18 +39,20 @@ export const projectsData = {
         demo_link: '',
         video_id: '',
         stack: ['Python', 'NumPy', 'Jupyter'],
-        status: 'working',
-        link: '/work/writtenNumbers'
+        status: 'completed',
+        link: '/work/writtenNumbers',
+        image_link: '/projCoverPhotos/writtenNumber.png'
         },
     'project_6': {
-        title: 'Airline Upgrade System',
+        title: 'Upgrade Management',
         content: 'An airline upgrade system that efficiently manages the priority of passengers using a hard coded AVL Tree with all necessary methods implemented',
         repo_link: 'https://github.com/willk0814/UpgradeSystem',
         demo_link: '',
         video_id: 'oVP-xKiiJJ0',
         stack: ['Python'],
         status: 'completed',
-        link: '/work/airlineUpgradeSystem'
+        link: '/work/airlineUpgradeSystem',
+        image_link: '/projCoverPhotos/airlineUpgrades.png'
         },
     'project_7': {
         title: 'Sorting Visualizer',
@@ -57,7 +62,8 @@ export const projectsData = {
         video_id: 'Xa8D1WPD8_I',
         stack: ['React', 'JS', 'tailwind', 'node'],
         status: 'completed',
-        link: '/work/sortingVisualizer'
+        link: '/work/sortingVisualizer',
+        image_link: '/projCoverPhotos/sorter.png'
         },
     'project_8': {
         title: 'Command Line 2048',
@@ -67,7 +73,8 @@ export const projectsData = {
         video_id: 'Lxy7WBOGsNw',
         stack: ['Python'],
         status: 'completed',
-        link: '/work/2048'
+        link: '/work/2048',
+        image_link: '/projCoverPhotos/2048.png'
         },
     'project_9': {
         title: 'Personal Portfolio',
@@ -77,7 +84,8 @@ export const projectsData = {
         video_id: '',
         stack: ['JS', 'React', 'node', 'tailwind', 'framer'],
         status: 'working',
-        link: '/work/portfolio'
+        link: '/work/portfolio', 
+        image_link: '/projCoverPhotos/portfolio.png'
         },
     'project_10': {
         title: 'Space Invaders',
@@ -87,6 +95,7 @@ export const projectsData = {
         video_id: '',
         stack: ['JS', 'CSS', 'HTML'],
         status: 'completed',
-        link: '/work/spaceInvaders'
+        link: '/work/spaceInvaders',
+        image_link: '/projCoverPhotos/spaceInvaders.png'
         }
     }
