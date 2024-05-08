@@ -15,7 +15,7 @@ export default function FilterButtons({ filterSettings, selectFilter}) {
         }}
         initial= 'initial'
         animate='animate'
-        className='flex flex-row space-x-2'>
+        className='flex flex-row space-x-2 w-[95vw] max-w-[500px]'>
 
 
             <motion.button
@@ -26,7 +26,7 @@ export default function FilterButtons({ filterSettings, selectFilter}) {
                             duration: 0.6
                         }},
                 }}
-                className={`${filterSettings['fullStack']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                className={`${filterSettings['fullStack']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1 flex-1`}
                 onClick={() => selectFilter('fullStack')}>
                 Full Stack
             </motion.button>
@@ -39,7 +39,7 @@ export default function FilterButtons({ filterSettings, selectFilter}) {
                             duration: 0.6
                         }}
                 }}
-                className={`${filterSettings['ML']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                className={`${filterSettings['ML']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1 flex-1`}
                 onClick={() => selectFilter('ML')}>
                 ML/AI
             </motion.button>
@@ -52,9 +52,9 @@ export default function FilterButtons({ filterSettings, selectFilter}) {
                             duration: 0.6
                         }}
                 }}
-                className={`${filterSettings['webDev']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                className={`${filterSettings['webDev']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1 flex-1`}
                 onClick={() => selectFilter('webDev')}>
-                Web Dev
+                Web
             </motion.button>
             
             <motion.button
@@ -65,9 +65,9 @@ export default function FilterButtons({ filterSettings, selectFilter}) {
                             duration: 0.6
                         }}
                 }}
-                className={`${filterSettings['others']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1`}
+                className={`${filterSettings['others']? 'bg-blue-600 text-[#E8E8E8]' : 'bg-[#A1E5AB] text-black' } rounded-lg text-lg p-1 flex-1`}
                 onClick={() => selectFilter('others')}>
-                Others
+                Other
             </motion.button>
         
     </motion.div>

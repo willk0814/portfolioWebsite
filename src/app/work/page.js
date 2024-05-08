@@ -36,9 +36,9 @@ export default function page() {
       className='w-full min-h-screen flex flex-col items-center justify-center bg-[#E8E8E8] pt-20'>
       
       <div className='flex flex-col items-start w-[95vw]'>
-        <FilterButtons 
+        {/* <FilterButtons 
           filterSettings={filterSettings} 
-          selectFilter={handleSelectFilter}/>
+          selectFilter={handleSelectFilter}/> */}
         
         <motion.div 
           className='gridContainer'

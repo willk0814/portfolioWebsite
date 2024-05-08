@@ -3,7 +3,7 @@ export const educationData = {
         institution: 'Stevens Inst. of Tech.',
         degree: 'M.S. Machine Learning',
         bullets: [
-            'Expected Gradution Date: December 2024',
+            'Expected Gradution Date: Dec 2024',
             'Part time degree track that allows me to remain elligible for full-time work',
             '4.0 GPA through all completed course work'
         ]
