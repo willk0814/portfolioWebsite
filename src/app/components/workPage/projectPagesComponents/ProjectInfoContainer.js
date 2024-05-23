@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { AiFillGithub } from 'react-icons/ai'
 import { CgWebsite } from "react-icons/cg";
@@ -11,7 +11,8 @@ import ProjectTechBar from './ProjectTechBar'
 
 export default function ProjectInfoContainer({ projectData }) {
 
-    const playerSize = 'full'
+    const [playerSize, setPlayerSize] = useState('md')
+
 
     const smPlayerOpts = {
         height: '200px',
@@ -49,6 +50,25 @@ export default function ProjectInfoContainer({ projectData }) {
             rel: 0,
             color: 'black'
         }}
+
+        useEffect(() => {
+            const handleResize = () => {
+              const screenWidth = window.innerWidth
+        
+              if (screenWidth > 1005){
+                setPlayerSize('full')
+              } else if (screenWidth <= 1005 && screenWidth > 675) {
+                setPlayerSize('md')
+              } else {
+                setPlayerSize('sm')
+              }
+            }
+            handleResize()
+            window.addEventListener('resize', handleResize)
+            return () => {
+              window.removeEventListener('resize', handleResize)
+            }
+          }, [])
   return (
     <div 
     className='flex flex-col items-center justify-start py-20 w-full min-h-[70vh] bg-[#E8E8E8]'>
