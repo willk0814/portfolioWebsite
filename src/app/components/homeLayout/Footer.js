@@ -98,7 +98,9 @@ export default function Footer() {
                     </motion.a>
 
                     <motion.a
-                        href=''
+                        href={'/KoenigResume.pdf'}
+                        target='_blank'
+                        rel='noreferrer'
                         whileHover={{ y: -7}}>
                         <HiOutlineDocumentText size={35} color='#2663eb'/>
                     </motion.a>

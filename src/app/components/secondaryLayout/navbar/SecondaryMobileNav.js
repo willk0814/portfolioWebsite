@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
@@ -9,6 +9,12 @@ import { FaNoteSticky } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 
 export default function SecondaryMobileNav() {
+
+    const [initialRender, setInitialRender] = useState(true)
+
+    useEffect(() => {
+        setInitialRender(false)
+    }, [])
 
     const containerVariants = {
         initial: {},
@@ -26,7 +32,7 @@ export default function SecondaryMobileNav() {
                         transition: { when: 'beforeChildren', staggerChildren: 0.1}
                     }
                 }}
-                initial='initial'
+                initial={initialRender? 'initial' : 'animate'}
                 animate='animate'
                 className='flex flex-row w-full space-x-4 justify-center items-center'>
                 <motion.div

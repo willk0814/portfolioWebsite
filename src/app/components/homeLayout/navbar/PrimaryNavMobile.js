@@ -118,9 +118,9 @@ export default function PrimaryNavMobile() {
                         </motion.a>
                         <motion.a 
                             className='flex justify-center py-1 px-3 rounded-lg' 
-                            // href={Koenig_Resume} 
+                            href={'/KoenigResume.pdf'}
                             target='_blank'
-                            rel='noopener noreferrer'
+                            rel='noreferrer'
                             whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
                             <HiOutlineDocumentText className='cursor-pointer' size={70} color='#2663eb'/>
                         </motion.a>

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineDocumentText } from 'react-icons/hi'
+// import KoenigResume from '@/'
 
 
 
@@ -31,11 +32,13 @@ export default function LinkBar() {
         </motion.a>
 
         <motion.a
-            href=''
+            href={'/KoenigResume.pdf'}
+            target='_blank'
+            rel='noreferrer'
             className='bg-green-500 bg-opacity-40 rounded-lg p-2 px-4'
             whileHover = {{ boxShadow: '0px 0px 8px rgb(255, 255, 255)', opacity: 1}}>
             <HiOutlineDocumentText size={45} color='white'/>
         </motion.a>
-    </div>
+    </div> 
   )
 }

@@ -20,13 +20,15 @@ export default function page() {
   }
 
   return (
-    <div className='w-full min-h-screen flex flex-col py-20 items-center justify-start bg-[#E8E8E8]'>
+    
+    <div 
+      className='w-full min-h-screen flex flex-col py-20 items-center justify-start bg-[#E8E8E8]'>
 
         <motion.div 
           variants={{
             initial: { y: '5%' },
             animate: { y: 0, 
-             transition: { duration: 0.6 }} 
+            transition: { duration: 0.6 }} 
           }}
           initial='initial'
           animate='animate'
@@ -77,5 +79,6 @@ export default function page() {
           </form>
         </motion.div>
     </div>
+
   )
 }

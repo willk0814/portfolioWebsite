@@ -99,7 +99,9 @@ export default function SecondaryFooter() {
                     </motion.a>
 
                     <motion.a
-                        href=''
+                        href={'/KoenigResume.pdf'}
+                        target='_blank'
+                        rel='noreferrer'
                         whileHover={{ y: -7}}>
                         <HiOutlineDocumentText size={35} color='#E8E8E8'/>
                     </motion.a>
