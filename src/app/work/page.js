@@ -47,7 +47,7 @@ export default function page() {
             animate: { opacity: 1,
               transition: {
                 when: 'beforeChildren',
-                staggerChildren: 0.1
+                staggerChildren: 0.2
               }}
           }}
           initial='initial'
