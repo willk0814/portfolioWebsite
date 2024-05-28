@@ -28,7 +28,7 @@ export const projectsData = {
         demo_link: 'https://willk0814.github.io/pathfinder/',
         video_id: 'zNvEhUeH3Mg',
         stack: ['TS', 'JS', 'React', 'tailwind', 'node'],
-        status: 'completed',
+        status: 'working',
         link: '/work/pathfinder',
         image_link: '/projCoverPhotos/pathfinder.png'
         },
@@ -39,7 +39,7 @@ export const projectsData = {
         demo_link: '',
         video_id: '',
         stack: ['Python', 'NumPy', 'Jupyter'],
-        status: 'completed',
+        status: 'working',
         link: '/work/writtenNumbers',
         image_link: '/projCoverPhotos/writtenNumber.png'
         },
