@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     // Footer Container
-    <div className='w-screen h-[30vh] flex justify-center bg-blue-600 p-6'>
+    <div className='w-screen min-h-[30vh] flex justify-center bg-blue-600 p-6'>
 
         {/* Blue footer */}
         <div className='flex flex-row justify-between items-center w-[95vw] max-w-[1000px] bg-[#E8E8E8] h-full rounded-lg p-3'>
