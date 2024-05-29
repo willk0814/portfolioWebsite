@@ -24,8 +24,8 @@ export default function page() {
 
         <motion.div 
           variants={{
-            initial: { y: '5%' },
-            animate: { y: 0, 
+            initial: { opacity: 0, y: '5%' },
+            animate: { opacity: 1, y: 0, 
             transition: { duration: 0.6 }} 
           }}
           initial='initial'
