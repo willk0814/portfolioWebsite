@@ -24,7 +24,7 @@ export default function Footer() {
         {/* Blue footer */}
         <div className='flex flex-row justify-between items-center w-[95vw] max-w-[1000px] bg-[#E8E8E8] h-full rounded-lg p-3'>
 
-            <div className='flex flex-col justify-between h-full'>
+            <div className='flex flex-col justify-between h-full space-y-3'>
                 {/* Page Links */}
                 <div className='flex flex-col space-y-1'>
                     

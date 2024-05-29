@@ -27,7 +27,9 @@ export default function page() {
             }
           }}
           initial='initial'
-          animate='animate'>Right now there is nothing here, but I plan to document my continuing learning, projects, and just general thoughts that feel worth sharing.</motion.p>
+          animate='animate'>
+            Right now there is nothing here.  I plan to fill this page with all kinds of things that I am interested in; programming, cooking, star wars fan fiction, New York Knicks basketball, and anything else that feels worth sharing to me.
+          </motion.p>
     </div>
   )
 }

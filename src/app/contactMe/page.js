@@ -2,21 +2,19 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
+// Import our route
+// import sendEmail from '../../../utils/sendEmail'
+
 export default function page() {
   
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [content, setContent] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    // console.log(`Sending email with: \n Email: ${email} \n Subject: ${subject} \n Content: ${content}`)
-
-    try {
-      
-    } catch (error) {
-      console.log(`Error: ${error}`)
-    }
+    // sendEmail({ name: name, email: email, subject: subject, content: content})
   }
 
   return (
@@ -39,16 +37,30 @@ export default function page() {
           <form
             className='flex flex-col w-full items-center space-y-3'
             onSubmit={handleSubmit}>
+              
+              {/* Name Input */}
+            <div className='flex flex-col w-full items-start space-y-1'>
+              <h1 className='text-[#E8E8E8] text-xl'>Name:</h1>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type='text'
+                placeholder='Ronald'
+                className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]' />
+            </div>
+
+            {/* Email Input */}
             <div className='flex flex-col w-full items-start space-y-1'>
               <h1 className='text-[#E8E8E8] text-xl'>Email:</h1>
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type='email'
-                placeholder='mc@donalds.com'
+                placeholder='ronald@mcdonalds.com'
                 className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]' />
             </div>
 
+            {/* Subject Input */}
             <div className='flex flex-col w-full items-start justify-between'>
               <h1 className='text-[#E8E8E8] text-xl'>Subject:</h1>
               <input 
@@ -59,6 +71,7 @@ export default function page() {
                 className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]' />
             </div>
 
+            {/* Content */}
             <div className='flex flex-col w-full space-y-1'>
               <h1 className='text-[#E8E8E8] text-xl'>Content:</h1>
               <textarea 

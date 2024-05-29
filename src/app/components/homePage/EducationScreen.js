@@ -1,5 +1,5 @@
 import React from 'react'
-import { educationData } from '@/app/assets/educationData'
+import { educationData } from '../../assets/educationData'
 
 function EducationCard({ educationData }) {
 
