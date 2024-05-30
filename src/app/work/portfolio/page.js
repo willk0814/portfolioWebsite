@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { projectsData } from '@/app/assets/projectsData'
-import ProjectInfoContainer from '@/app/components/workPage/projectPagesComponents/ProjectInfoContainer'
+import ProjectInfoContainer from '@/app/components/pageComponents/workPage/projectPagesComponents/ProjectInfoContainer'
 
 export default function page() {
 

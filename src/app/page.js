@@ -1,14 +1,14 @@
-import AboutMeSection from "./components/homePage/AboutMeSection";
-import ContactSection from "./components/homePage/ContactSection";
-import EducationScreen from "./components/homePage/EducationScreen";
-import ExperienceSection from "./components/homePage/ExperienceSection";
-import ProjectSection from "./components/homePage/ProjectSection/ProjectSection";
-import SkillsScreen from "./components/homePage/SkillsSection/SkillsScreen";
-import TitleScreen from "./components/homePage/TitleSection/TitleScreen";
+import AboutMeSection from "./components/pageComponents/homePage/AboutMeSection";
+import ContactSection from "./components/pageComponents/homePage/ContactSection";
+import EducationScreen from "./components/pageComponents/homePage/EducationScreen";
+import ExperienceSection from "./components/pageComponents/homePage/ExperienceSection";
+import ProjectSection from "./components/pageComponents/homePage/ProjectSection/ProjectSection";
+import SkillsScreen from "./components/pageComponents/homePage/SkillsSection/SkillsScreen";
+import TitleScreen from "./components/pageComponents/homePage/TitleSection/TitleScreen";
 
 // import Navbar from "./components/homeLayout/navbar/Navbar";
-import Footer from "./components/homeLayout/Footer";
-import PrimaryNav from "./components/homeLayout/navbar/PrimaryNav";
+import Footer from "./components/layoutComponents/homeLayout/Footer";
+import PrimaryNav from "./components/layoutComponents/homeLayout/navbar/PrimaryNav";
 
 export default function Home() {
   return (

@@ -1,8 +1,8 @@
 
 import { Noto_Sans_Mono } from 'next/font/google'
 import "./globals.css";
-import Footer from './components/homeLayout/Footer';
-import SecondFooter from './components/secondaryLayout/SecondaryFooter';
+import Footer from './components/layoutComponents/homeLayout/Footer';
+import SecondFooter from './components/layoutComponents/secondaryLayout/SecondaryFooter';
 
 const noto = Noto_Sans_Mono({ subsets: ["latin"], weight: '400' });
 

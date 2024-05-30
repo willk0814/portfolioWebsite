@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { experienceData } from '../../assets/experienceData'
+import { experienceData } from '../../../assets/experienceData'
 import { motion } from 'framer-motion'
 
 import { FaArrowCircleDown } from 'react-icons/fa'

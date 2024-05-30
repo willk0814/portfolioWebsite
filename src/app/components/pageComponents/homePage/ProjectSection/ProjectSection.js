@@ -1,5 +1,5 @@
 import React from 'react'
-import { projectsData } from '../../../assets/projectsData'
+import { projectsData } from '../../../../assets/projectsData'
 import HomeTechnologyBar from './HomeTechnnologyBar'
 
 function ProjectCard ({ projectData }) {

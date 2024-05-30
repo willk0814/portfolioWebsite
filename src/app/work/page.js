@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 
 import { projectsData } from '../assets/projectsData'
-import FilterButtons from '../components/workPage/FilterButtons'
-import CollapsedProjectCard from '../components/workPage/CollapsedProjectCard'
+import FilterButtons from '../components/pageComponents/workPage/FilterButtons'
+import CollapsedProjectCard from '../components/pageComponents/workPage/CollapsedProjectCard'
 import { motion } from 'framer-motion'
 
 export default function page() {
