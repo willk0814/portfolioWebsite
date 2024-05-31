@@ -91,7 +91,7 @@ export default function SecondaryMobileNav() {
                 </motion.div>
              
 
-                <motion.div
+                {/* <motion.div
                     variants={{
                         initial: { opacity: 0, y: '-150%'},
                         animate: { opacity: 1, y: 0 }
@@ -107,7 +107,7 @@ export default function SecondaryMobileNav() {
                             
                         </motion.div>
                     </Link>
-                </motion.div>
+                </motion.div> */}
             </motion.div>
              
     </div>

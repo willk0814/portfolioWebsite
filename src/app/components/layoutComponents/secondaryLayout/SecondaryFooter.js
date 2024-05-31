@@ -62,7 +62,7 @@ export default function SecondaryFooter() {
                             <FaArrowRight size={20} color='#E8E8E8'/>
                         </motion.div>
                     </Link>
-                    <Link
+                    {/* <Link
                         className='flex flex-row space-x-1 items-center'
                         href='/contactMe'
                         onMouseEnter={() => setHoverContact(true)}
@@ -77,7 +77,7 @@ export default function SecondaryFooter() {
                             animate={hoverContact ? 'hover' : 'initial'}>
                             <FaArrowRight size={20} color='#E8E8E8'/>
                         </motion.div>
-                    </Link>
+                    </Link> */}
                 </div>
 
                 {/* Social Links */}

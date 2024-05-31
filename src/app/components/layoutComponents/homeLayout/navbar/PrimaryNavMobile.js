@@ -78,12 +78,12 @@ export default function PrimaryNavMobile() {
                                     <h1 className='text-blue-600 text-5xl font-extrabold'>Notes</h1>
                                 </Link>
                             </motion.li>
-                            <motion.li
+                            {/* <motion.li
                                 whileHover = {{ scale: 1.3, originX: 0 }}>
                                 <Link href='/contactMe' onClick = {toggleMobileNav}>
                                     <h1 className='text-blue-600 text-5xl font-extrabold'>Contact Me</h1>
                                 </Link>
-                            </motion.li>
+                            </motion.li> */}
                         </ul>
                     </motion.div>
                     <motion.div

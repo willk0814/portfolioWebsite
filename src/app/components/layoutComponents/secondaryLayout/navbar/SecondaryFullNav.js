@@ -117,7 +117,7 @@ export default function SecondaryFullNav() {
                 </Link>
             </AnimatePresence>
 
-            <AnimatePresence>
+            {/* <AnimatePresence>
                 <Link href='/contactMe'>
                 <motion.div      
                     onHoverStart={() => setContactHovered(true)}
@@ -142,7 +142,7 @@ export default function SecondaryFullNav() {
                         </motion.h1>}
                 </motion.div>
                 </Link>
-            </AnimatePresence>
+            </AnimatePresence> */}
             
         </div>
     </div>

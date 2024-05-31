@@ -61,7 +61,7 @@ export default function Footer() {
                             <FaArrowRight size={20} color='#2663eb'/>
                         </motion.div>
                     </Link>
-                    <Link
+                    {/* <Link
                         className='flex flex-row space-x-1 items-center'
                         href='/contactMe'
                         onMouseEnter={() => setHoverContact(true)}
@@ -76,7 +76,7 @@ export default function Footer() {
                             animate={hoverContact ? 'hover' : 'initial'}>
                             <FaArrowRight size={20} color='#2663eb'/>
                         </motion.div>
-                    </Link>
+                    </Link> */}
                 </div>
 
                 {/* Social Links */}
