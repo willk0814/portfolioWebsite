@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={noto.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
