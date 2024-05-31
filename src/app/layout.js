@@ -1,5 +1,6 @@
 
 import { Noto_Sans_Mono } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Footer from './components/layoutComponents/homeLayout/Footer';
 import SecondFooter from './components/layoutComponents/secondaryLayout/SecondaryFooter';
