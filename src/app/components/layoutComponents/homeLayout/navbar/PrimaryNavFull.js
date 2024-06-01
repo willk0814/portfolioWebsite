@@ -116,7 +116,7 @@ return (
                 </Link>
             </AnimatePresence>
 
-            {/* <AnimatePresence>
+            <AnimatePresence>
                 <Link href='/contactMe'>
                 <motion.div      
                     onHoverStart={() => setContactHovered(true)}
@@ -141,7 +141,7 @@ return (
                         </motion.h1>}
                 </motion.div>
                 </Link>
-            </AnimatePresence> */}
+            </AnimatePresence>
             
         </div>
     </div>
