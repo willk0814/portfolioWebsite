@@ -6,7 +6,9 @@ import { useForm, submitHandler } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 
-const FormatData = z.object({
+import { sendEmail } from '@/app/_actions'
+
+export const FormatDataSchema = z.object({
     name: z.string().min(1, 'Name is required'),
     email: z.string().email('Please enter a valid email address'),
     message: z.string().min(10, "Please enter at least 10 characters")
@@ -24,21 +26,22 @@ export default function ContactFormTest() {
         reset,
         formState: { errors }
     } = useForm({
-        resolver: zodResolver(FormatData)
+        resolver: zodResolver(FormatDataSchema)
     })
 
     const processForm = async (data) => {
-        // setData(data)
+        
+        const result = await sendEmail(data)
 
-        // const formDataObject = Object.fromEntries(data)
 
-        const tmpData = await fetch('api/send', {
-            method: 'POST',
-            body: JSON.stringify(data)
-        }).then(res => res.json())
+        console.log(result)
+        if (!result.success) {
+            console.log('Something went wrong')
+            return
+        } 
 
-        setData(tmpData)
         reset()
+        setData(result.data)
     }
 
     // const handleSubmit = async (e) => {
@@ -88,7 +91,7 @@ export default function ContactFormTest() {
                     <p className='text-sm text-red-400'>{errors.email.message}</p>}
 
                 <textarea 
-                    className='rounded-lg bg-[#E8E8E8] text-lg p-2 text-blue-600 placeholder:text-blue-400 h-[200px] text-wrap flex items-start justify-start'
+                    className='rounded-lg bg-[#E8E8E8] text-lg p-2 text-blue-600 placeholder:text-blue-400 h-[200px] text-wrap flex items-start justify-start resize-none'
                     placeholder='Email'
                     {...register('message')}/>
                 {errors.message?.message &&
@@ -106,9 +109,7 @@ export default function ContactFormTest() {
             <div className='text-[#E8E8E8] flex flex-col w-full h-full items-start justify-center'>
                 {data && 
                 <>
-                    <h1>{`Name: ${data["name"]}`}</h1>
-                    <h1>{`Email: ${data["email"]}`}</h1>
-                    <h1>{`Message: ${data["message"]}`}</h1>
+                    <h1>{`ID: ${data.data.id}`}</h1>
                 </>}
             </div>
         </div>       
