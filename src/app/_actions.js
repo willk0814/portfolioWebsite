@@ -15,12 +15,12 @@ export async function sendEmail(data) {
     
     console.log(`Sending an email w/ : ${name}, ${email}, ${message}`)
     // console.log(`API KEY: ${process.env.NEXT_PUBLIC_RESEND_API_KEY}`)
-    const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     try {
         const response = await resend.emails.send({
             from:'contactForm@willkoenig.info',
-            to: `${process.env.NEXT_PUBLIC_DEST_EMAIL}`,
+            to: 'wkoenig0814@gmail.com',
             subject: 'test',
             html: `<h1>Email from ${name}</h1> <p>${message}</p> <h3>Return Email: ${email}</h3>`
         })
