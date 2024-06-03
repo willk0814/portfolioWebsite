@@ -6,7 +6,7 @@ import { FormDataSchema } from './components/pageComponents/contactPage/ContactF
 import { Resend } from 'resend'
 
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 
 export async function sendEmail(data) {
     
@@ -17,7 +17,7 @@ export async function sendEmail(data) {
     try {
         const response = await resend.emails.send({
             from:'contactForm@willkoenig.info',
-            to: `${process.env.DEST_EMAIL}`,
+            to: `${process.env.NEXT_PUBLIC_DEST_EMAIL}`,
             subject: 'test',
             html: `<h1>Email from ${name}</h1> <p>${message}</p> <h3>Return Email: ${email}</h3>`
         })
