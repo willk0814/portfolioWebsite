@@ -5,6 +5,8 @@ import { FormDataSchema } from './components/pageComponents/contactPage/ContactF
 
 import { Resend } from 'resend'
 
+require('dotenv').config()
+
 
 
 export async function sendEmail(data) {
@@ -12,7 +14,7 @@ export async function sendEmail(data) {
     const { name, email, message } = data
     
     console.log(`Sending an email w/ : ${name}, ${email}, ${message}`)
-    console.log(`API KEY: ${process.env.NEXT_PUBLIC_RESEND_API_KEY}`)
+    // console.log(`API KEY: ${process.env.NEXT_PUBLIC_RESEND_API_KEY}`)
     const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 
     try {
