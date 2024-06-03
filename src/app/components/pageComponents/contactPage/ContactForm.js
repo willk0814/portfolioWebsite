@@ -19,7 +19,7 @@ export default function ContactForm() {
             email: email,
             subject: subject,
             content: content
-        }
+        } 
 
         try {
             const response = await fetch('/api/send', {
@@ -51,6 +51,7 @@ export default function ContactForm() {
           <div className='w-full flex justify-start'>
             <h1 className='text-4xl sm:text-6xl text-[#A1E5AB] mb-5 text-start font-bold'>Let's talk</h1>
           </div>
+          
           <form
             className='flex flex-col w-full items-center space-y-3'
             onSubmit={handleSubmit}>

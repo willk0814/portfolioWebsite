@@ -1,8 +1,7 @@
 
 import React from 'react'
 import ContactForm from '../components/pageComponents/contactPage/ContactForm'
-import { Resend } from 'resend'
-import { NextResponse } from 'next/server'
+import ContactFormTest from '../components/pageComponents/contactPage/ContactFormTest'
 
 
 export default function page() {
@@ -11,7 +10,8 @@ export default function page() {
     
     <div 
       className='w-full min-h-screen flex flex-col py-20 items-center justify-start bg-[#E8E8E8]'>
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ContactFormTest />
     </div>
 
   )
