@@ -14,7 +14,7 @@ export async function sendEmail(data) {
     const { name, email, message } = data
     
     console.log(`Sending an email w/ : ${name}, ${email}, ${message}`)
-    console.log(`API KEY: ${process.env.RESEND_API_KEY}`)
+    // console.log(`API KEY: ${process.env.RESEND_API_KEY}`)
     const resend = new Resend(process.env.RESEND_API_KEY)
 
     try {
