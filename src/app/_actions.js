@@ -13,6 +13,8 @@ export async function sendEmail(data) {
     
     console.log(`Sending an email w/ : ${name}, ${email}, ${message}`)
     const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
+
+    console.log(`API KEY: ${process.env.NEXT_PUBLIC_RESEND_API_KEY}`)
     
     try {
         const response = await resend.emails.send({

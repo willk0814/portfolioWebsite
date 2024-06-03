@@ -66,7 +66,7 @@ export default function ContactFormTest() {
 
 
   return (
-    <div className='flex flex-row space-x-2 items-center justify-center w-[100vw] h-[50vh]'>
+    <div className='flex flex-row space-x-2 items-center justify-center w-[100vw] h-[70vh]'>
         <div className='bg-blue-600 flex flex-col p-3 w-[40vw] h-fit rounded-lg'>
             <h1 className='text-2xl text-[#E8E8E8]'>Form:</h1>
         
