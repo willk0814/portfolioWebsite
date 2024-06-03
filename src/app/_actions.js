@@ -6,13 +6,13 @@ import { FormDataSchema } from './components/pageComponents/contactPage/ContactF
 import { Resend } from 'resend'
 
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 
 export async function sendEmail(data) {
     
     const { name, email, message } = data
     
     console.log(`Sending an email w/ : ${name}, ${email}, ${message}`)
+    const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
     
     try {
         const response = await resend.emails.send({
