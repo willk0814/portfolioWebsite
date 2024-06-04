@@ -28,12 +28,12 @@ export default function EmailTemplate({ name, email, subject, message }) {
               <Row>
                 <Button
                   style={linkButton}
-                  href={'https://github.com/willk0814'}>
+                  href={'https://www.linkedin.com/in/will-koenig/'}>
                   <FaLinkedinIn size={45} color='#87efad' />
                 </Button>
 
                 <Button style={linkButton}
-                  href={'https://www.linkedin.com/in/will-koenig/'}>
+                  href={'https://github.com/willk0814'}>
                   <AiFillGithub size={45} color='#87efad' />
                 </Button>
               </Row>
