@@ -21,19 +21,19 @@ function ExperienceCard({ exp_id, experienceData, expanded, handleExpand }) {
 
   return (
     <div 
-        className='bg-blue-600 rounded-lg p-2 max-w-[800px] flex flex-col w-[95vw] m-1 cursor-pointer'
+        className='primaryBg rounded-lg p-2 max-w-[800px] flex flex-col w-[95vw] m-1 cursor-pointer'
         onClick={() => handleExpand(exp_id)}>
         <div className='flex flex-row justify-between'>
-            <h1 className='text-xl sm:text-4xl text-[#E8E8E8]'>{experienceData.company}</h1>
+            <h1 className='text-xl sm:text-4xl primaryText'>{experienceData.company}</h1>
             <motion.div
                 className='flex w-fit h-fit cursor-pointer'
                 variants={iconVariants}
                 initial='initial'
                 animate={expanded ? 'expanded' : ''}>
-                <FaArrowCircleDown size={35} color='#E8E8E8'/>
+                <FaArrowCircleDown size={35} className='primaryText'/>
             </motion.div>
         </div>
-        <h1 className='sm:text-xl italic text-[#E8E8E8]'>{experienceData.position}</h1>
+        <h1 className='sm:text-xl italic primaryText'>{experienceData.position}</h1>
 
         <motion.ul 
             variants={{
@@ -61,7 +61,7 @@ function ExperienceCard({ exp_id, experienceData, expanded, handleExpand }) {
                         initial: { x: '-20%', opacity: 0 },
                         open: { x: 0, opacity: 1}
                       }}
-                      className='sm:text-lg text-[#E8E8E8]'>{text}</motion.li>
+                      className='sm:text-lg primaryText'>{text}</motion.li>
               ))}
         </motion.ul>
     </div>
@@ -92,8 +92,8 @@ export default function ExperienceSection() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start w-full bg-[#E8E8E8] py-10">
-        <h1 className="text-[3.5rem] sm:text-8xl text-blue-600 mb-3">Experience</h1>
+    <div className="flex flex-col items-center justify-start w-full secondaryBg py-10">
+        <h1 className="text-[3.5rem] sm:text-8xl secondaryText mb-3">Experience</h1>
 
         <div className='flex flex-col justify-center'>
             {Object.keys(experienceData).map((key, indx) => (

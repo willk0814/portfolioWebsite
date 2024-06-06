@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function ContactSection() {
   
   return (
-    <div className='flex items-center justify-center w-full h-[45vh] bg-blue-600'>
+    <div className='flex items-center justify-center w-full h-[45vh] primaryBg'>
         
         {/* Link to contact page */}
         <motion.div
@@ -15,7 +15,7 @@ export default function ContactSection() {
           <Link
               href='/contactMe'
               className='flex items-center justify-center bg-[#A1E5AB] cursor-pointer'>
-                  <h1 className='text-2xl sm:text-4xl text-blue-600'>Contact Me</h1>
+                  <h1 className='text-2xl sm:text-4xl secondaryText'>Contact Me</h1>
           </Link>
         </motion.div>
 

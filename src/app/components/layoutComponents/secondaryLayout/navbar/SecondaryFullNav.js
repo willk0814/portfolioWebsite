@@ -57,7 +57,7 @@ export default function SecondaryFullNav() {
     <div className='flex flex-row w-[95%] h-full justify-between items-center'>
             
         <Link
-            className='text-4xl text-blue-600'
+            className='text-4xl secondaryText'
             href={'/'}>Will Koenig
         </Link>
         
@@ -80,7 +80,7 @@ export default function SecondaryFullNav() {
 
                     {(workHovered || pathname === '/work') && 
                         <motion.h1
-                            className='text-xl font-bold text-blue-600'
+                            className='text-xl font-bold secondaryText'
                             variants={textVariants}
                             initial='initial'
                             animate='animate'>
@@ -107,7 +107,7 @@ export default function SecondaryFullNav() {
 
                     {(notesHovered || pathname === '/notes') && 
                         <motion.h1
-                        className='text-xl font-bold text-blue-600'
+                        className='text-xl font-bold secondaryText'
                         variants={textVariants}
                         initial='initial'
                         animate='animate'>
@@ -134,7 +134,7 @@ export default function SecondaryFullNav() {
 
                     {(contactHovered || pathname === '/contactMe') && 
                         <motion.h1
-                        className='text-xl font-bold text-blue-600'
+                        className='text-xl font-bold secondaryText'
                         variants={textVariants}
                         initial='initial'
                         animate='animate'>

@@ -19,7 +19,7 @@ export default function LinkBar() {
             rel='noreferrer'
             className='bg-green-500 bg-opacity-40 rounded-lg p-2 px-4'
             whileHover = {{ boxShadow: '0px 0px 8px rgb(255, 255, 255)'}}>
-            <AiFillGithub size={45} color='white'/>
+            <AiFillGithub size={45} className='primaryText'/>
         </motion.a>
 
         <motion.a
@@ -28,7 +28,7 @@ export default function LinkBar() {
             rel='noreferrer'
             className='bg-green-500 bg-opacity-40 rounded-lg p-2 px-4'
             whileHover = {{ boxShadow: '0px 0px 8px rgb(255, 255, 255)'}}>
-            <FaLinkedinIn size={45} color='white'/>
+            <FaLinkedinIn size={45} className='primaryText'/>
         </motion.a>
 
         <motion.a
@@ -37,7 +37,7 @@ export default function LinkBar() {
             rel='noreferrer'
             className='bg-green-500 bg-opacity-40 rounded-lg p-2 px-4'
             whileHover = {{ boxShadow: '0px 0px 8px rgb(255, 255, 255)', opacity: 1}}>
-            <HiOutlineDocumentText size={45} color='white'/>
+            <HiOutlineDocumentText size={45} className='primaryText'/>
         </motion.a>
     </div> 
   )

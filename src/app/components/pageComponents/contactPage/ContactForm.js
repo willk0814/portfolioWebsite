@@ -59,7 +59,7 @@ export default function ContactForm() {
           }}
           initial='initial'
           animate='animate'
-          className='flex items-center flex-col bg-blue-600 rounded-lg p-4 w-[95vw] max-w-[750px]  mt-10'>
+          className='flex items-center flex-col primaryBg rounded-lg p-4 w-[95vw] max-w-[750px]  mt-10'>
           <div className='w-full flex justify-between'>
             <h1 className='text-4xl sm:text-6xl text-[#A1E5AB] mb-5 text-start font-bold'>Let's talk</h1>
           </div>
@@ -73,14 +73,14 @@ export default function ContactForm() {
             <div className='flex flex-col w-full items-start space-y-1'>
               
               <div className='flex flex-row justify-between w-full'>
-                <h1 className='text-[#E8E8E8] text-xl'>Name:</h1>
+                <h1 className='primaryText text-xl'>Name:</h1>
                 {errors.name?.message &&
                     <p className='text-md text-red-400'>{errors.name.message}</p>}
               </div>
               
               <input
                 placeholder='Ronald'
-                className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]'
+                className='rounded-lg p-2 secondaryText w-full text-2xl secondaryBg'
                 {...register('name')} />
             </div>
 
@@ -88,14 +88,14 @@ export default function ContactForm() {
             <div className='flex flex-col w-full items-start space-y-1'>
               
               <div className='flex flex-row justify-between w-full'>
-                <h1 className='text-[#E8E8E8] text-xl'>Email:</h1>
+                <h1 className='primaryText text-xl'>Email:</h1>
                 {errors.email?.message &&
                     <p className='text-md text-red-400'>{errors.email.message}</p>}
               </div>
               
               <input
                 placeholder='ronald@mcdonalds.com'
-                className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]' 
+                className='rounded-lg p-2 secondaryText w-full text-2xl secondaryBg' 
                 {...register('email')}/>
             </div>
 
@@ -103,14 +103,14 @@ export default function ContactForm() {
             <div className='flex flex-col w-full items-start justify-between'>
             
               <div className='flex flex-row justify-between w-full'>
-                  <h1 className='text-[#E8E8E8] text-xl'>Subject:</h1>
+                  <h1 className='primaryText text-xl'>Subject:</h1>
                   {errors.subject?.message &&
                       <p className='text-md text-red-400'>{errors.subject.message}</p>}
               </div>
             
               <input 
                 placeholder='Order'
-                className='rounded-lg p-2 text-blue-600 w-full text-2xl bg-[#E8E8E8]'
+                className='rounded-lg p-2 secondaryText w-full text-2xl secondaryBg'
                 {...register('subject')} />
             </div>
 
@@ -118,14 +118,14 @@ export default function ContactForm() {
             <div className='flex flex-col w-full space-y-1'>
               
               <div className='flex flex-row justify-between w-full'>
-                <h1 className='text-[#E8E8E8] text-xl'>Message:</h1>
+                <h1 className='primaryText text-xl'>Message:</h1>
                 {errors.message?.message &&
                     <p className='text-md text-red-400'>{errors.message.message}</p>}
               </div>
               
               <textarea 
                 placeholder='med 2 cheeseburgers meal, Diet Coke, apple pie'
-                className='resize-none rounded-lg h-[60vh] max-h-[325px] bg-[#E8E8E8] text-xl text-blue-600 p-2'
+                className='resize-none rounded-lg h-[60vh] max-h-[325px] secondaryBg text-xl secondaryText p-2'
                 {...register('message')} />
             </div>
             
@@ -134,7 +134,7 @@ export default function ContactForm() {
               whileHover={{
                 scaleX: 1.2
               }}>
-                <h1 className='text-blue-600 font-extrabold text-3xl'>Send</h1>
+                <h1 className='secondaryText font-extrabold text-3xl'>Send</h1>
             </motion.button>
           </form>
         </motion.div>

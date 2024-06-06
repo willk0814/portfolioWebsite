@@ -135,80 +135,80 @@ export default function WorkTechBar({ stack, full }) {
     }, [stack, full]);
   return (
     <div className='flex flex-row flex-wrap items-start'>
-        {react && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaReact size={18} color='#2663eb'/>
+        {react && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaReact size={18} className='secondaryText'/>
         </div>}
 
-        {python && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPython size={18} color='#2663eb' />
+        {python && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPython size={18} className='secondaryText' />
         </div>}
 
-        {reactNative && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <TbBrandReactNative size={18} color='#2663eb' />
+        {reactNative && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <TbBrandReactNative size={18} className='secondaryText' />
         </div>}
 
-        {mongoDB && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiMongodb size={18} color='#2663eb' />
+        {mongoDB && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiMongodb size={18} className='secondaryText' />
         </div>}
 
-        {tailwind && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTailwindcss size={18} color='#2663eb' />
+        {tailwind && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTailwindcss size={18} className='secondaryText' />
         </div>}
 
-        {JS && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <IoLogoJavascript size={18} color='#2663eb' />
+        {JS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <IoLogoJavascript size={18} className='secondaryText' />
         </div>}
 
-        {TS && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTypescript size={18} color='#2663eb' />
+        {TS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTypescript size={18} className='secondaryText' />
         </div>}
 
-        {pyTorch && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPytorch size={18} color='#2663eb' />
+        {pyTorch && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPytorch size={18} className='secondaryText' />
         </div>}
 
-        {tensorFlow && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTensorflow size={18} color='#2663eb' />
+        {tensorFlow && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTensorflow size={18} className='secondaryText' />
         </div>}
 
-        {numPy && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiNumpy size={18} color='#2663eb' />
+        {numPy && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiNumpy size={18} className='secondaryText' />
         </div>}
 
-        {pandas && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPandas size={18} color='#2663eb' />
+        {pandas && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPandas size={18} className='secondaryText' />
         </div>}
 
-        {jupyter && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiJupyter size={18} color='#2663eb' />
+        {jupyter && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiJupyter size={18} className='secondaryText' />
         </div>}
         
-        {CSS && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <IoLogoCss3 size={18} color='#2663eb' />
+        {CSS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <IoLogoCss3 size={18} className='secondaryText' />
         </div>}
 
-        {HTML && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaHtml5 size={18} color='#2663eb' />
+        {HTML && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaHtml5 size={18} className='secondaryText' />
         </div>}
 
-        {node && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaNodeJs size={18} color='#2663eb' />
+        {node && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaNodeJs size={18} className='secondaryText' />
         </div>}
 
-        {framer && <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiFramer size={18} color='#2663eb' />
+        {framer && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiFramer size={18} className='secondaryText' />
         </div>}
 
-        {express &&  <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiExpress size={18} color='#2663eb' />
+        {express &&  <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiExpress size={18} className='secondaryText' />
         </div>}
 
-        {mongoose &&  <div className='bg-[#E8E8E8] w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiMongoose size={18} color='#2663eb' />
+        {mongoose &&  <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiMongoose size={18} className='secondaryText' />
         </div>}
 
         {overflow && <div className='flex w-fit items-start mr-1  mb-1 rounded-lg font-bold'>
-            <h2 className='text-[#E8E8E8]'>...</h2>
+            <h2 className='primaryText'>...</h2>
         </div>}
     </div>
   )

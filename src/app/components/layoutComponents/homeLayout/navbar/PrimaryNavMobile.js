@@ -12,7 +12,7 @@ export default function PrimaryNavMobile() {
   return (
     <div className='flex w-full h-full justify-end items-center px-4'>
         <motion.button
-            className='flex flex-col space-y-2 bg-[#E8E8E8] p-2 rounded-md border-blue-600 border-2 z-20'
+            className='flex flex-col space-y-2 secondaryBg p-2 rounded-md border-blue-600 border-2 z-20'
             onClick={() => toggleMobileNav()}
             animate={showMobile ? 'open' : 'closed'}>
             <motion.span 
@@ -20,19 +20,19 @@ export default function PrimaryNavMobile() {
                     open: { rotate: 45, y: 11 },
                     closed: { rotate: 0, y: 0 }
                 }} 
-                className='w-6 h-[3px] bg-[#2663eb] rounded-lg'></motion.span>
+                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
             <motion.span 
                 variants={{
                     open: { opacity: 0 },
                     closed: { opacity: 1 }
                 }}
-                className='w-6 h-[3px] bg-[#2663eb] rounded-lg'></motion.span>
+                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
             <motion.span 
                 variants = {{
                     closed: { rotate: 0, y: 0 },
                     open: { rotate: -45, y: -11 }
                 }}
-                className='w-6 h-[3px] bg-[#2663eb] rounded-lg'></motion.span>
+                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
         </motion.button>
 
         <AnimatePresence>
@@ -58,7 +58,7 @@ export default function PrimaryNavMobile() {
                     animate = 'open'
                     initial = 'closed'
                     exit = 'closed'
-                    className='fixed flex flex-col justify-center inset-0 h-[100vh] w-[100vw] bg-[#E8E8E8] p-6'>
+                    className='fixed flex flex-col justify-center inset-0 h-[100vh] w-[100vw] secondaryBg p-6'>
                     <motion.div
                         variants = {{
                             open: { y: 0, opacity: 1 },
@@ -69,25 +69,25 @@ export default function PrimaryNavMobile() {
                             <motion.li
                                 whileHover = {{ scale: 1.3, originX: 0 }}>
                                 <Link href='/work'  onClick = {toggleMobileNav}>
-                                    <h1 className='text-blue-600 text-5xl font-extrabold'>Work</h1>
+                                    <h1 className='secondaryText text-5xl font-extrabold'>Work</h1>
                                 </Link>
                             </motion.li>
                             <motion.li
                                 whileHover = {{ scale: 1.3, originX: 0 }}>
                                 <Link href='/notes' onClick = {toggleMobileNav}>
-                                    <h1 className='text-blue-600 text-5xl font-extrabold'>Notes</h1>
+                                    <h1 className='secondaryText text-5xl font-extrabold'>Notes</h1>
                                 </Link>
                             </motion.li>
                             <motion.li
                                 whileHover = {{ scale: 1.3, originX: 0 }}>
                                 <Link href='/contactMe' onClick = {toggleMobileNav}>
-                                    <h1 className='text-blue-600 text-5xl font-extrabold'>Contact Me</h1>
+                                    <h1 className='secondaryText text-5xl font-extrabold'>Contact Me</h1>
                                 </Link>
                             </motion.li>
                         </ul>
                     </motion.div>
                     <motion.div
-                        className='w-[100%] h-[3px] rounded-md bg-blue-600 mt-8 mb-4'
+                        className='w-[100%] h-[3px] rounded-md primaryBg mt-8 mb-4'
                         variants = {{
                             open: { y: 0, opacity: 1 },
                             closed: { y: '25%', opacity: 0 }
@@ -106,7 +106,7 @@ export default function PrimaryNavMobile() {
                             target='_blank'
                             rel='noreferrer'
                             whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
-                            <AiFillLinkedin className='cursor-pointer' size={70} color='#2663eb'/>
+                            <AiFillLinkedin className='cursor-pointer secondaryText' size={70}/>
                         </motion.a>
                         <motion.a 
                             className='flex justify-center py-1 px-3 rounded-lg' 
@@ -114,7 +114,7 @@ export default function PrimaryNavMobile() {
                             target='_blank'
                             rel='noreferrer'
                             whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
-                            <AiFillGithub className='cursor-pointer' size={70} color='#2663eb'/>
+                            <AiFillGithub className='cursor-pointer secondaryText' size={70}/>
                         </motion.a>
                         <motion.a 
                             className='flex justify-center py-1 px-3 rounded-lg' 
@@ -122,7 +122,7 @@ export default function PrimaryNavMobile() {
                             target='_blank'
                             rel='noreferrer'
                             whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
-                            <HiOutlineDocumentText className='cursor-pointer' size={70} color='#2663eb'/>
+                            <HiOutlineDocumentText className='cursor-pointer secondaryText' size={70} />
                         </motion.a>
                     </motion.div>
                     

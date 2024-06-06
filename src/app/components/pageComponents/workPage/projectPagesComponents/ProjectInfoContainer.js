@@ -71,9 +71,9 @@ export default function ProjectInfoContainer({ projectData }) {
           }, [])
   return (
     <div 
-    className='flex flex-col items-center justify-start py-20 w-full min-h-[70vh] bg-[#E8E8E8]'>
+    className='flex flex-col items-center justify-start py-20 w-full min-h-[70vh] secondaryBg'>
         <div className='mb-2'>
-            <h1 className='text-4xl text-blue-600'>{projectData.title}</h1>
+            <h1 className='text-4xl secondaryText'>{projectData.title}</h1>
         </div>
 
         <motion.div 
@@ -126,17 +126,17 @@ export default function ProjectInfoContainer({ projectData }) {
                 
                 <div className='flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-between'>
                     <div className='flex flex-col space-y-1'>
-                        <h1 className='text-2xl text-blue-600'>Links</h1>
+                        <h1 className='text-2xl secondaryText'>Links</h1>
 
                         <div className='flex flex-row space-x-2'>
                             <motion.a
                                 href={projectData.repo_link}
                                 target='_blank'
                                 rel='noreferrer'
-                                className='cursor-pointer flex flex-row items-center bg-blue-600 rounded-lg p-2'
+                                className='cursor-pointer flex flex-row items-center primaryBg rounded-lg p-2'
                                 whileHover = {{ boxShadow: '0px 0px 20px rgb(38, 99, 235)'}}>
-                                    <AiFillGithub size={30} color='#E8E8E8'/>
-                                    <h1 className='text-[#E8E8E8] text-xl ml-2'>Repo</h1>
+                                    <AiFillGithub size={30} className='primaryText'/>
+                                    <h1 className='primaryText text-xl ml-2'>Repo</h1>
                             </motion.a>
 
                             {/* Demo Link */}
@@ -145,24 +145,24 @@ export default function ProjectInfoContainer({ projectData }) {
                                 href={projectData.demo_link}
                                 target='_blank'
                                 rel='noreferrer'
-                                className='cursor-pointer flex flex-row items-center  bg-blue-600 rounded-lg p-2'
+                                className='cursor-pointer flex flex-row items-center  primaryBg rounded-lg p-2'
                                 whileHover = {{ boxShadow: '0px 0px 20px rgb(38, 99, 235)'}}>
-                                    <CgWebsite size={30} color='#E8E8E8'/>
-                                    <h1 className='text-[#E8E8E8] text-xl ml-2'>Demo</h1>
+                                    <CgWebsite size={30} className='primaryText'/>
+                                    <h1 className='primaryText text-xl ml-2'>Demo</h1>
                                 </motion.a>
                             }
                         </div>
                     </div>
                     <div className='flex flex-col space-y-1 sm:items-end'>
-                        <h1 className='text-2xl text-blue-600'>Stack</h1>
+                        <h1 className='text-2xl secondaryText'>Stack</h1>
                         <ProjectTechBar stack={projectData.stack} full={true} />
                     </div>
                 </div>
                 
                 
                 <div className='flex flex-col space-y-1'>
-                    <h1 className='text-2xl text-blue-600'>Description</h1>
-                    <h1 className='text text-blue-600'>{projectData.content}</h1>
+                    <h1 className='text-2xl secondaryText'>Description</h1>
+                    <h1 className='text secondaryText'>{projectData.content}</h1>
                 </div>
             </motion.div>
         </motion.div>

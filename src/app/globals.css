@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+
+.primaryBg {
+  background-color: #1f2421;
+}
+
+.primaryText {
+  color: #E8E8E8
+}
+
+.secondaryBg {
+  background-color: #216869;
+}
+
+.secondaryText {
+  color: #E8E8E8;
+}
+
 /* Project Page Grid Container Responsive Styles */
 .gridContainer {
   padding-block: 0.5rem;

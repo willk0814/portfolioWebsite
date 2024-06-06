@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 export default function page() {
   return (
     <div 
-      className='w-full min-h-[70vh] flex flex-col items-center justify-start py-20 bg-[#E8E8E8]'>
+      className='w-full min-h-[70vh] flex flex-col items-center justify-start py-20 secondaryBg'>
         <motion.h1 
-          className='text-7xl sm:text-8xl text-blue-600'
+          className='text-7xl sm:text-8xl secondaryText'
           variants={{
             initial: { opacity: 0, y: '20%'},
             animate: { opacity: 1, y: 0,
@@ -19,7 +19,7 @@ export default function page() {
           animate='animate'>Notes</motion.h1>
 
         <motion.p 
-          className='text-blue-600 italic w-[95vw] max-w-[450px] text-lg text-center'
+          className='secondaryText italic w-[95vw] max-w-[450px] text-lg text-center'
           variants={{
             initial: { opacity: 0, y: '20%'},
             animate: { opacity: 1, y: 0,

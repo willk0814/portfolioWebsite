@@ -47,7 +47,7 @@ export default function SecondaryMobileNav() {
                             animate={`${pathname === '/' ? 'hover' : ''}`}
                             initial='initial'>
                                 
-                                <FiHome size={'35px'} color={'#2663eb'}/>
+                                <FiHome className='secondaryText' size={'35px'} />
                                 
                         </motion.div>
                     </Link>
@@ -65,7 +65,7 @@ export default function SecondaryMobileNav() {
                         variants={containerVariants}
                         animate={`${pathname === '/work' ? 'hover' : ''}`}
                         initial='initial'>
-                            <FaBriefcase size={'35px'} color={'#2663eb'}/>
+                            <FaBriefcase className='secondaryText' size={'35px'} />
                     </motion.div>
                     </Link>
                 </motion.div>
@@ -84,7 +84,7 @@ export default function SecondaryMobileNav() {
                         animate={`${pathname === '/notes' ? 'hover' : ''}`}
                         initial='initial'>
                         
-                            <FaNoteSticky size={'35px'} color={'#2663eb'}/>
+                            <FaNoteSticky className='secondaryText' size={'35px'} />
                         
                     </motion.div>
                     </Link>
@@ -103,7 +103,7 @@ export default function SecondaryMobileNav() {
                             animate={`${pathname === '/contactMe' ? 'hover_lg' : ''}`}
                             initial='initial'>
                             
-                                <MdAlternateEmail size={'35px'} color={'#2663eb'}/>
+                                <MdAlternateEmail className='secondaryText' size={'35px'} />
                             
                         </motion.div>
                     </Link>

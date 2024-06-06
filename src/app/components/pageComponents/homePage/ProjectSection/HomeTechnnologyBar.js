@@ -135,80 +135,80 @@ export default function HomeTechnologyBar({ stack, full }) {
     }, [stack, full]);
   return (
     <div className='flex flex-row flex-wrap items-start'>
-        {react && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <FaReact size={25} color='white'/>
+        {react && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <FaReact size={25} className='primaryText'/>
         </div>}
 
-        {python && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiPython size={25} color='white' />
+        {python && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiPython size={25} className='primaryText' />
         </div>}
 
-        {reactNative && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <TbBrandReactNative size={25} color='white' />
+        {reactNative && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <TbBrandReactNative size={25} className='primaryText' />
         </div>}
 
-        {mongoDB && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiMongodb size={25} color='white' />
+        {mongoDB && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiMongodb size={25} className='primaryText' />
         </div>}
 
-        {tailwind && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiTailwindcss size={25} color='white' />
+        {tailwind && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiTailwindcss size={25} className='primaryText' />
         </div>}
 
-        {JS && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <IoLogoJavascript size={25} color='white' />
+        {JS && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <IoLogoJavascript size={25} className='primaryText' />
         </div>}
 
-        {TS && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiTypescript size={25} color='white' />
+        {TS && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiTypescript size={25} className='primaryText' />
         </div>}
 
-        {pyTorch && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiPytorch size={25} color='white' />
+        {pyTorch && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiPytorch size={25} className='primaryText' />
         </div>}
 
-        {tensorFlow && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiTensorflow size={25} color='white' />
+        {tensorFlow && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiTensorflow size={25} className='primaryText' />
         </div>}
 
-        {numPy && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiNumpy size={25} color='white' />
+        {numPy && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiNumpy size={25} className='primaryText' />
         </div>}
 
-        {pandas && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiPandas size={25} color='white' />
+        {pandas && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiPandas size={25} className='primaryText' />
         </div>}
 
-        {jupyter && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiJupyter size={25} color='white' />
+        {jupyter && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiJupyter size={25} className='primaryText' />
         </div>}
         
-        {CSS && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <IoLogoCss3 size={25} color='white' />
+        {CSS && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <IoLogoCss3 size={25} className='primaryText' />
         </div>}
 
-        {HTML && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <FaHtml5 size={25} color='white' />
+        {HTML && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <FaHtml5 size={25} className='primaryText' />
         </div>}
 
-        {node && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <FaNodeJs size={25} color='white' />
+        {node && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <FaNodeJs size={25} className='primaryText' />
         </div>}
 
-        {framer && <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiFramer size={25} color='white' />
+        {framer && <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiFramer size={25} className='primaryText' />
         </div>}
 
-        {express &&  <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiExpress size={25} color='white' />
+        {express &&  <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiExpress size={25} className='primaryText' />
         </div>}
 
-        {mongoose &&  <div className='bg-blue-600 w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
-            <SiMongoose size={25} color='white' />
+        {mongoose &&  <div className='primaryBg w-fit items-start p-2 mr-1 mb-1 rounded-lg'>
+            <SiMongoose size={25} className='primaryText' />
         </div>}
 
         {overflow && <div className='flex w-fit items-start py-2 mr-1  mb-1 rounded-lg font-bold'>
-            <h2 className='text-blue-600'>...</h2>
+            <h2 className='secondaryText'>...</h2>
         </div>}
     </div>
   )

@@ -20,10 +20,10 @@ export default function SecondaryFooter() {
 
   return (
     // Footer Container
-    <div className='w-screen min-h-[30vh] flex items-end justify-center bg-[#E8E8E8] p-6'>
+    <div className='w-screen min-h-[30vh] flex items-end justify-center secondaryBg p-6'>
 
         {/* Blue footer */}
-        <div className='flex flex-row justify-between items-center w-[95vw] max-w-[1000px] bg-blue-600 h-full rounded-lg p-3'>
+        <div className='flex flex-row justify-between items-center w-[95vw] max-w-[1000px] primaryBg h-full rounded-lg p-3'>
 
             <div className='flex flex-col justify-between space-y-3 h-full'>
                 {/* Page Links */}
@@ -34,7 +34,7 @@ export default function SecondaryFooter() {
                         href='/work'
                         onMouseEnter={() => setHoverWork(true)}
                         onMouseLeave={() => setHoverWork(false)}>
-                        <h1 className='text-[#E8E8E8] text-xl'>Work</h1>
+                        <h1 className='primaryText text-xl'>Work</h1>
                         <motion.div
                             variants={{
                                 initial: { x: 0 },
@@ -42,7 +42,7 @@ export default function SecondaryFooter() {
                             }}
                             initial='initial'
                             animate={hoverWork ? 'hover' : 'initial'}>
-                            <FaArrowRight size={20} color='#E8E8E8'/>
+                            <FaArrowRight className='primaryText' size={20} />
                         </motion.div>
                     </Link>
 
@@ -51,7 +51,7 @@ export default function SecondaryFooter() {
                         href='/notes'
                         onMouseEnter={() => setHoverNotes(true)}
                         onMouseLeave={() => setHoverNotes(false)}>
-                        <h1 className='text-[#E8E8E8] text-xl'>Notes</h1>
+                        <h1 className='primaryText text-xl'>Notes</h1>
                         <motion.div
                             variants={{
                                 initial: { x: 0 },
@@ -59,7 +59,7 @@ export default function SecondaryFooter() {
                             }}
                             initial='initial'
                             animate={hoverNotes ? 'hover' : 'initial'}>
-                            <FaArrowRight size={20} color='#E8E8E8'/>
+                            <FaArrowRight className='primaryText' size={20} />
                         </motion.div>
                     </Link>
                     <Link
@@ -67,7 +67,7 @@ export default function SecondaryFooter() {
                         href='/contactMe'
                         onMouseEnter={() => setHoverContact(true)}
                         onMouseLeave={() => setHoverContact(false)}>
-                        <h1 className='text-xl text-[#E8E8E8]'>Contact</h1>
+                        <h1 className='text-xl primaryText'>Contact</h1>
                         <motion.div
                             variants={{
                                 initial: { x: 0 },
@@ -75,7 +75,7 @@ export default function SecondaryFooter() {
                             }}
                             initial='initial'
                             animate={hoverContact ? 'hover' : 'initial'}>
-                            <FaArrowRight size={20} color='#E8E8E8'/>
+                            <FaArrowRight className='primaryText' size={20} />
                         </motion.div>
                     </Link>
                 </div>
@@ -87,7 +87,7 @@ export default function SecondaryFooter() {
                         target='_blank'
                         rel='noreferrer'
                         whileHover={{ y: -7}}>
-                        <AiFillGithub size={35} color='#E8E8E8'/>
+                        <AiFillGithub className='primaryText' size={35}/>
                     </motion.a>
 
                     <motion.a
@@ -95,7 +95,7 @@ export default function SecondaryFooter() {
                         target='_blank'
                         rel='noreferrer'
                         whileHover={{ y: -7}}>
-                        <FaLinkedinIn size={35} color='#E8E8E8'/>
+                        <FaLinkedinIn className='primaryText' size={35}/>
                     </motion.a>
 
                     <motion.a
@@ -103,7 +103,7 @@ export default function SecondaryFooter() {
                         target='_blank'
                         rel='noreferrer'
                         whileHover={{ y: -7}}>
-                        <HiOutlineDocumentText size={35} color='#E8E8E8'/>
+                        <HiOutlineDocumentText className='primaryText' size={35}/>
                     </motion.a>
                 </div>
 
@@ -116,7 +116,7 @@ export default function SecondaryFooter() {
                 <Link 
                     className='flex flex-col space-y-1 items-start'
                     href='/'>
-                        <h1 className='text-[#E8E8E8] text-2xl text-end'>Will Koenig</h1>
+                        <h1 className='primaryText text-2xl text-end'>Will Koenig</h1>
                         <motion.div
                             variants={{
                                 initial: { width: 0,
@@ -131,7 +131,7 @@ export default function SecondaryFooter() {
                             initial='initial'
                             animate={hoverHome ? 'hover' : 'initial'}
                             exit='initial'
-                            className='bg-[#E8E8E8] h-[3px] rounded-lg'></motion.div>
+                            className='secondaryBg h-[3px] rounded-lg'></motion.div>
                 </Link>
             </div>
         </div>

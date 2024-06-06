@@ -29,7 +29,7 @@ export default function SecondaryNavbar() {
     }, [])
 
   return (
-    <div className='fixed left-0 w-full h-20 z-10 bg-[#E8E8E8]'>
+    <div className='fixed left-0 w-full h-20 z-10 secondaryBg'>
         <div className='flex flex-col h-full items-center'>
 
             {showMobile ? (
@@ -38,7 +38,7 @@ export default function SecondaryNavbar() {
                 <SecondaryFullNav />
                 )}
 
-            <div className='bg-blue-600 h-[3px] w-[98%] mb-1'></div>
+            <div className='secondaryText h-[3px] w-[98%] mb-1'></div>
         </div>
     </div>
   )

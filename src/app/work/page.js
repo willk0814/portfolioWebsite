@@ -33,7 +33,7 @@ export default function page() {
 
   return (
     <div 
-      className='w-full min-h-screen flex flex-col items-center justify-center bg-[#E8E8E8] pt-20'>
+      className='w-full min-h-screen flex flex-col items-center justify-center secondaryBg pt-20'>
       
       <div className='flex flex-col items-start w-[95vw]'>
         {/* <FilterButtons 
