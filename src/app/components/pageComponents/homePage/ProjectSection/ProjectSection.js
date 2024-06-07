@@ -23,6 +23,9 @@ export default function ProjectSection() {
   return (
     <div className="flex flex-col items-center justify-center w-screen primaryBg py-10">
         <h1 className="text-7xl sm:text-8xl primaryText text-center mb-5">Projects</h1>
+        <h1 className="text-xl primaryText text-center mb-5 italic w-[80vw] max-w-[450px]">
+          Below are a few examples of my work, you can find more on my Github or on the work page of this site.
+        </h1>
 
         <div className='w-[95vw] flex flex-row space-x-2 overflow-x-scroll pb-3 scroll-container'>
           {Object.keys(projectsData).map((key, indx) => {
