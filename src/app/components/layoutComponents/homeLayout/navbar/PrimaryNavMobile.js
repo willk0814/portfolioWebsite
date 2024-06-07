@@ -12,7 +12,7 @@ export default function PrimaryNavMobile() {
   return (
     <div className='flex w-full h-full justify-end items-center px-4'>
         <motion.button
-            className='flex flex-col space-y-2 secondaryBg p-2 rounded-md border-blue-600 border-2 z-20'
+            className='flex flex-col space-y-2 primaryBg p-2 rounded-md border-[#A1E5AB] border-2 z-20'
             onClick={() => toggleMobileNav()}
             animate={showMobile ? 'open' : 'closed'}>
             <motion.span 
@@ -20,19 +20,19 @@ export default function PrimaryNavMobile() {
                     open: { rotate: 45, y: 11 },
                     closed: { rotate: 0, y: 0 }
                 }} 
-                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
+                className='w-6 h-[3px] secondaryBg rounded-lg'></motion.span>
             <motion.span 
                 variants={{
                     open: { opacity: 0 },
                     closed: { opacity: 1 }
                 }}
-                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
+                className='w-6 h-[3px] secondaryBg rounded-lg'></motion.span>
             <motion.span 
                 variants = {{
                     closed: { rotate: 0, y: 0 },
                     open: { rotate: -45, y: -11 }
                 }}
-                className='w-6 h-[3px] primaryBg rounded-lg'></motion.span>
+                className='w-6 h-[3px] secondaryBg rounded-lg'></motion.span>
         </motion.button>
 
         <AnimatePresence>
@@ -105,7 +105,7 @@ export default function PrimaryNavMobile() {
                             href='https://linkedin.com/in/will-koenig' 
                             target='_blank'
                             rel='noreferrer'
-                            whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
+                            whileHover = {{boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)'}}>
                             <AiFillLinkedin className='cursor-pointer secondaryText' size={70}/>
                         </motion.a>
                         <motion.a 
@@ -113,7 +113,7 @@ export default function PrimaryNavMobile() {
                             href='https://github.com/willk0814' 
                             target='_blank'
                             rel='noreferrer'
-                            whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
+                            whileHover = {{boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)'}}>
                             <AiFillGithub className='cursor-pointer secondaryText' size={70}/>
                         </motion.a>
                         <motion.a 
@@ -121,7 +121,7 @@ export default function PrimaryNavMobile() {
                             href={'/KoenigResume.pdf'}
                             target='_blank'
                             rel='noreferrer'
-                            whileHover = {{boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}}>
+                            whileHover = {{boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)'}}>
                             <HiOutlineDocumentText className='cursor-pointer secondaryText' size={70} />
                         </motion.a>
                     </motion.div>

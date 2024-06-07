@@ -7,8 +7,8 @@ import WorkTechBar from './WorkTechBar'
 export default function CollapsedProjectCard({ projectData }) {
     return (
         <motion.div
-          className='flex flex-col primaryBg border-2 border-blue-600 rounded-lg h-[350px] w-[full]' 
-          whileHover = {{ boxShadow: '0px 0px 8px rgb(38, 99, 235)'}}>
+          className='flex flex-col primaryBg border-2 border-[#121212] rounded-lg h-[350px] w-[full]' 
+          whileHover = {{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
           <Link 
             href={projectData.link}
             className='flex flex-col justify-between rounded-lg w-full h-full'>

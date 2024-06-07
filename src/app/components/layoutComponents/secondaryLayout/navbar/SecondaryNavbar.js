@@ -38,7 +38,7 @@ export default function SecondaryNavbar() {
                 <SecondaryFullNav />
                 )}
 
-            <div className='secondaryText h-[3px] w-[98%] mb-1'></div>
+            <div className='primaryBg h-[3px] w-[98%] mb-1'></div>
         </div>
     </div>
   )

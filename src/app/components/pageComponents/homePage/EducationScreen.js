@@ -5,13 +5,13 @@ function EducationCard({ educationData }) {
 
     return (
         <div className='secondaryBg rounded-lg flex flex-col m-1 p-2 max-w-[450px] w-[95vw]'>
-            <h1 className='text-2xl sm:text-3xl text-blue-600'>{educationData.institution}</h1>
-            <h1 className='sm:text-xl italic text-blue-600'>{educationData.degree}</h1>
+            <h1 className='text-2xl sm:text-3xl secondaryText'>{educationData.institution}</h1>
+            <h1 className='sm:text-xl italic secondaryText'>{educationData.degree}</h1>
             <ul className='list-disc pl-4'>
                 {educationData.bullets.map((txt, indx) => (
                     <li
                         key={indx}
-                        className='sm:text-lg text-blue-600'>{txt}</li>
+                        className='sm:text-lg secondaryText'>{txt}</li>
                 ))}
             </ul>
         </div>

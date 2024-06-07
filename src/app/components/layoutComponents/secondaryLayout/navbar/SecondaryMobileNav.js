@@ -17,9 +17,9 @@ export default function SecondaryMobileNav() {
     }, [])
 
     const containerVariants = {
-        initial: {},
-        hover: { boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)' },
-        hover_lg: { boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)'}};
+        initial: {}, 
+        hover: { boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' },
+        hover_lg: { boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }};
 
     let pathname = usePathname() || '/'
   return (
@@ -45,7 +45,8 @@ export default function SecondaryMobileNav() {
                             className='flex flex-row items-center justify-between px-[10px] py-2 rounded-lg bg-green-300'
                             variants={containerVariants}
                             animate={`${pathname === '/' ? 'hover' : ''}`}
-                            initial='initial'>
+                            initial='initial'
+                            whileHover={{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                                 
                                 <FiHome className='secondaryText' size={'35px'} />
                                 
@@ -64,7 +65,8 @@ export default function SecondaryMobileNav() {
                         className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
                         variants={containerVariants}
                         animate={`${pathname === '/work' ? 'hover' : ''}`}
-                        initial='initial'>
+                        initial='initial'
+                        whileHover={{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                             <FaBriefcase className='secondaryText' size={'35px'} />
                     </motion.div>
                     </Link>
@@ -82,7 +84,8 @@ export default function SecondaryMobileNav() {
                         className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
                         variants={containerVariants}
                         animate={`${pathname === '/notes' ? 'hover' : ''}`}
-                        initial='initial'>
+                        initial='initial'
+                        whileHover={{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                         
                             <FaNoteSticky className='secondaryText' size={'35px'} />
                         
@@ -101,7 +104,8 @@ export default function SecondaryMobileNav() {
                             className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
                             variants={containerVariants}
                             animate={`${pathname === '/contactMe' ? 'hover_lg' : ''}`}
-                            initial='initial'>
+                            initial='initial'
+                            whileHover={{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                             
                                 <MdAlternateEmail className='secondaryText' size={'35px'} />
                             

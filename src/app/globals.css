@@ -5,7 +5,7 @@
 
 
 .primaryBg {
-  background-color: #1f2421;
+  background-color: #121212;
 }
 
 .primaryText {
@@ -13,11 +13,11 @@
 }
 
 .secondaryBg {
-  background-color: #216869;
+  background-color: #E8E8E8;
 }
 
 .secondaryText {
-  color: #E8E8E8;
+  color: #121212;
 }
 
 /* Project Page Grid Container Responsive Styles */
@@ -32,17 +32,17 @@
   /* 4 columns by default */
   grid-template-rows: auto;
 
-  @media screen and (max-width: 1096px) {
+  @media screen and (max-width: 1130px) {
     /* For medium screens, switch to 3 columns */
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 863px) {
     /* For small screens, switch to 1 column */
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 590px) {
     /* For small screens, switch to 1 column */
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -63,7 +63,7 @@
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  background-color: rgb(37 99 235);
+  background-color: #121212;
   border: 1px solid #E8E8E8;
   border-radius: 15px;
 }

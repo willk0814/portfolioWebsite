@@ -26,7 +26,7 @@ export default function SecondaryFullNav() {
         hover: {
           width: '145px',
           originX: 0,
-          boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)',
+          boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)',
           transition: {
             when: 'beforeChildren'
           }
@@ -34,7 +34,7 @@ export default function SecondaryFullNav() {
         hover_lg: {
           width: '160px',
           originX: 0,
-          boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)',
+          boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)',
           transition: {
             when: 'beforeChildren'
         }}};
@@ -75,7 +75,7 @@ export default function SecondaryFullNav() {
                     initial='initial'
                     whileHover='hover'>
                     <motion.div>
-                        <FaBriefcase size={'35px'} color={'#2663eb'}/>
+                        <FaBriefcase size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(workHovered || pathname === '/work') && 
@@ -102,7 +102,7 @@ export default function SecondaryFullNav() {
                     // whileHover='hover'
                     >
                     <motion.div>
-                        <FaNoteSticky size={'35px'} color={'#2663eb'}/>
+                        <FaNoteSticky size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(notesHovered || pathname === '/notes') && 
@@ -129,7 +129,7 @@ export default function SecondaryFullNav() {
                     // whileHover='hover_lg'
                     >
                     <motion.div>
-                        <MdAlternateEmail size={'35px'} color={'#2663eb'}/>
+                        <MdAlternateEmail size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(contactHovered || pathname === '/contactMe') && 

@@ -4,7 +4,7 @@ import HomeTechnologyBar from './HomeTechnnologyBar'
 
 function ProjectCard ({ projectData }) {
   return (
-    <div className='flex flex-col justify-between secondaryBg rounded-lg p-2 h-[250px] min-w-[300px]'>
+    <div className='flex flex-col justify-between bg-[#E8E8E8] rounded-lg p-2 h-[250px] min-w-[300px]'>
       <h1 className='secondaryText text-2xl'>{projectData.title}</h1>
       
       <div>

@@ -25,7 +25,7 @@ export default function PrimaryNavFull() {
         hover: {
           width: '145px',
           originX: 0,
-          boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)',
+          boxShadow: '0 0 10px 5px rgba(232, 232, 232, 0.5)',
           transition: {
             when: 'beforeChildren'
           }
@@ -33,7 +33,7 @@ export default function PrimaryNavFull() {
         hover_lg: {
           width: '160px',
           originX: 0,
-          boxShadow: '0 0 10px 5px rgba(38, 99, 235, 0.5)',
+          boxShadow: '0 0 10px 5px rgba(232, 232, 232, 0.5)',
           transition: {
             when: 'beforeChildren'
         }}};
@@ -56,7 +56,7 @@ return (
     <div className='flex flex-row w-[95%] h-full justify-end items-center mb-1'>
     
         {/* <Link
-            className='text-4xl text-blue-600'
+            className='text-4xl text-[#121212]'
             href={'/'}>Will Koenig
         </Link>
             */}
@@ -74,12 +74,12 @@ return (
                     initial='initial'
                     whileHover='hover'>
                     <motion.div>
-                        <FaBriefcase size={'35px'} color={'#2663eb'}/>
+                        <FaBriefcase size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(workHovered || pathname === '/work') && 
                         <motion.h1
-                            className='text-xl font-bold text-blue-600'
+                            className='text-xl font-bold text-[#121212]'
                             variants={textVariants}
                             initial='initial'
                             animate='animate'>
@@ -101,12 +101,12 @@ return (
                     // whileHover='hover'
                     >
                     <motion.div>
-                        <FaNoteSticky size={'35px'} color={'#2663eb'}/>
+                        <FaNoteSticky size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(notesHovered || pathname === '/notes') && 
                         <motion.h1
-                        className='text-xl font-bold text-blue-600'
+                        className='text-xl font-bold text-[#121212]'
                         variants={textVariants}
                         initial='initial'
                         animate='animate'>
@@ -128,12 +128,12 @@ return (
                     // whileHover='hover_lg'
                     >
                     <motion.div>
-                        <MdAlternateEmail size={'35px'} color={'#2663eb'}/>
+                        <MdAlternateEmail size={'35px'} color={'#121212'}/>
                     </motion.div>
 
                     {(contactHovered || pathname === '/contactMe') && 
                         <motion.h1
-                        className='text-xl font-bold text-blue-600'
+                        className='text-xl font-bold text-[#121212]'
                         variants={textVariants}
                         initial='initial'
                         animate='animate'>
