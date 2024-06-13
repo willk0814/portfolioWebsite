@@ -10,7 +10,7 @@ function ProjectCard ({ projectData }) {
     <motion.div 
       className='flex flex-col justify-between bg-[#E8E8E8] rounded-lg p-2 h-[350px] min-w-[300px] mx-[0.4rem]'
       variants={{
-        initial: { opacity: 0, y: 15 },
+        initial: { opacity: 0, y: 30 },
         animate: { opacity: 1, y: 0,
           transition: { duration: 0.9 }
         }
@@ -38,7 +38,7 @@ export default function ProjectSection() {
           variants={{
             initial: { opacity: 0, },
             animate: { opacity: 1, 
-              transition: { staggerChildren: 0.2, delay: 0.4 }
+              transition: { staggerChildren: 0.4, delay: 0.4 }
             }
           }}
           initial='initial'
