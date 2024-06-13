@@ -54,12 +54,12 @@
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: #A1E5AB;
+  background-color: #A2D0AC;
   border-radius: 15px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
-  background-color: #A1E5AB;
+  background-color: #A2D0AC;
 }
 
 .scroll-container::-webkit-scrollbar-track {
