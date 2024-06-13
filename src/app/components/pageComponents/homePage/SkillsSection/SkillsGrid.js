@@ -26,7 +26,7 @@ export default function SkillsGrid() {
     <div className='flex flex-wrap items-center justify-center w-[95vw] max-w-[800px]'>
         
         <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-[#A1E5AB]'>Languages</h1>  
+            <h1 className='text-[2rem] text-[#A2D0AC]'>Languages</h1>  
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-2 rounded-lg m-1 flex flex-grow'>
@@ -54,7 +54,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-[#A1E5AB]'>Front End</h1>  
+            <h1 className='text-[2rem] text-[#A2D0AC]'>Front End</h1>  
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-2 rounded-lg m-1 flex flex-grow'>
@@ -82,7 +82,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-[#A1E5AB]'>Back End</h1>  
+            <h1 className='text-[2rem] text-[#A2D0AC]'>Back End</h1>  
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-2 rounded-lg m-1 flex flex-grow'>
@@ -102,7 +102,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-[#A1E5AB]'>Databasing</h1>  
+            <h1 className='text-[2rem] text-[#A2D0AC]'>Databasing</h1>  
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-2 rounded-lg m-1 flex flex-grow'>
@@ -118,7 +118,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
-            <h1 className='text-[2rem] text-[#A1E5AB]'>AI/ML</h1>  
+            <h1 className='text-[2rem] text-[#A2D0AC]'>AI/ML</h1>  
         </div>
 
         <div className='primaryBg border-2 border-[#E8E8E8] p-2 rounded-lg m-1 flex flex-grow'>

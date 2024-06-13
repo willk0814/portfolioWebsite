@@ -17,7 +17,7 @@ export default function AboutMeSection() {
           src={'/headshot.JPG'}
           width={300}
           height={300}
-          className='rounded-full border-4 border-[#A1E5AB]'/>
+          className='rounded-full border-4 border-[#A2D0AC]'/>
 
         <div className='bg-[#E8E8E8] w-[95vw] max-w-[450px] rounded-lg p-2 m-4'>
           <h1 className='text-wrap secondaryText'>I am a passionate Software Engineer with experience building Full-Stack applications in JavaScript as well as developing Machine Learning Models in Python.  As I continue my growth both personal and professional I am always looking for new challenges that I can apply all that I am continuosly learning to.</h1>

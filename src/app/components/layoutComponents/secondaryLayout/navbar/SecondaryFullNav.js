@@ -69,7 +69,7 @@ export default function SecondaryFullNav() {
                 <motion.div      
                     onHoverStart={() => setWorkHovered(true)}
                     onHoverEnd={() => setWorkHovered(false)}
-                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
+                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-[#A2D0AC]'
                     variants={containerVariants}
                     animate={`${pathname === '/work' ? 'hover' : ''}`}
                     initial='initial'
@@ -95,7 +95,7 @@ export default function SecondaryFullNav() {
                 <motion.div      
                     onHoverStart={() => setNotesHovered(true)}
                     onHoverEnd={() => setNotesHovered(false)}
-                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
+                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-[#A2D0AC]'
                     variants={containerVariants}
                     animate={(pathname === '/notes' || notesHovered) ? 'hover' : ''}
                     initial='initial'
@@ -122,7 +122,7 @@ export default function SecondaryFullNav() {
                 <motion.div      
                     onHoverStart={() => setContactHovered(true)}
                     onHoverEnd={() => setContactHovered(false)}
-                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-green-300'
+                    className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-[#A2D0AC]'
                     variants={containerVariants}
                     animate={(pathname === '/contactMe' || contactHovered) ? 'hover_lg' : ''}
                     initial='initial'

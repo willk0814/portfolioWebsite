@@ -53,7 +53,7 @@ function ExperienceCard({ exp_id, experienceData, expanded, handleExpand }) {
             initial='initial'
             animate={expanded ? 'open' : 'initial'}
             exit='initial'
-            className='list-disc pl-4'>
+            className='list-disc pl-5'>
               {experienceData.bullets.map((text, ind) => (
                   <motion.li 
                       key={ind}

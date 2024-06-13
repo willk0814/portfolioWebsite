@@ -11,10 +11,10 @@ export default function ContactSection() {
         
         {/* Link to contact page */}
         <motion.div
-          className='flex items-center justify-center py-4 w-[55%] h-[75%] rounded-full bg-[#A1E5AB] cursor-pointer'>
+          className='flex items-center justify-center py-4 w-[55%] h-[75%] rounded-full bg-[#A2D0AC] cursor-pointer'>
           <Link
               href='/contactMe'
-              className='flex items-center justify-center bg-[#A1E5AB] cursor-pointer'>
+              className='flex items-center justify-center bg-[#A2D0AC] cursor-pointer'>
                   <h1 className='text-2xl sm:text-4xl secondaryText'>Contact Me</h1>
           </Link>
         </motion.div>

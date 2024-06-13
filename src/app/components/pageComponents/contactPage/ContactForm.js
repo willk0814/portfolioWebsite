@@ -61,7 +61,7 @@ export default function ContactForm() {
           animate='animate'
           className='flex items-center flex-col primaryBg rounded-lg p-4 w-[95vw] max-w-[750px]  mt-10'>
           <div className='w-full flex justify-between'>
-            <h1 className='text-4xl sm:text-6xl text-[#A1E5AB] mb-5 text-start font-bold'>Let's talk</h1>
+            <h1 className='text-4xl sm:text-6xl text-[#A2D0AC] mb-5 text-start font-bold'>Let's talk</h1>
           </div>
           
           <form
@@ -130,9 +130,9 @@ export default function ContactForm() {
             </div>
             
             <motion.button 
-              className='bg-[#A1E5AB] rounded-lg flex justify-center w-fit p-6 px-10'
+              className='bg-[#A2D0AC] rounded-lg flex justify-center w-fit p-6 px-10'
               whileHover={{
-                scaleX: 1.2
+                scaleX: 1.2,
               }}>
                 <h1 className='secondaryText font-extrabold text-3xl'>Send</h1>
             </motion.button>
