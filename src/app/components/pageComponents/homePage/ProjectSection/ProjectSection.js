@@ -10,8 +10,10 @@ function ProjectCard ({ projectData }) {
     <motion.div 
       className='flex flex-col justify-between bg-[#E8E8E8] rounded-lg p-2 h-[350px] min-w-[300px] mx-[0.4rem]'
       variants={{
-        initial: { opacity: 0, y: '15px' },
-        animate: { opacity: 1, y: 0}
+        initial: { opacity: 0, y: 15 },
+        animate: { opacity: 1, y: 0,
+          transition: { duration: 0.9 }
+        }
 
       }}>
       <h1 className='secondaryText text-2xl'>{projectData.title}</h1>
@@ -32,11 +34,11 @@ export default function ProjectSection() {
   return (
     <div className="flex flex-col items-center justify-center w-screen primaryBg py-10">
         <motion.div 
-          className='w-[95vw] max-w-[1050px] flex flex-row overflow-x-scroll pb-3 scroll-container shadow-lg rounded-md h-fit'
+          className='w-[95vw] max-w-[1050px] flex flex-row overflow-y-hidden overflow-x-scroll pb-3 scroll-container rounded-md h-fit primaryBg'
           variants={{
             initial: { opacity: 0, },
             animate: { opacity: 1, 
-              transition: { staggerChildren: 0.2 }
+              transition: { staggerChildren: 0.2, delay: 0.4 }
             }
           }}
           initial='initial'
