@@ -1,10 +1,19 @@
+'use client'
+
 import React from 'react'
 import { projectsData } from '../../../../assets/projectsData'
 import HomeTechnologyBar from './HomeTechnnologyBar'
+import { animate, motion } from 'framer-motion'
 
 function ProjectCard ({ projectData }) {
   return (
-    <div className='flex flex-col justify-between bg-[#E8E8E8] rounded-lg p-2 h-[250px] min-w-[300px]'>
+    <motion.div 
+      className='flex flex-col justify-between bg-[#E8E8E8] rounded-lg p-2 h-[350px] min-w-[300px] mx-[0.4rem]'
+      variants={{
+        initial: { opacity: 0, y: '15px' },
+        animate: { opacity: 1, y: 0}
+
+      }}>
       <h1 className='secondaryText text-2xl'>{projectData.title}</h1>
       
       <div>
@@ -14,7 +23,7 @@ function ProjectCard ({ projectData }) {
             projectData.content.slice(0, 60) + '...' : projectData.content}
       </h1>
      </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -22,12 +31,16 @@ function ProjectCard ({ projectData }) {
 export default function ProjectSection() {
   return (
     <div className="flex flex-col items-center justify-center w-screen primaryBg py-10">
-        <h1 className="text-7xl sm:text-8xl primaryText text-center mb-5">Projects</h1>
-        <h1 className="text-xl primaryText text-center mb-5 italic w-[80vw] max-w-[450px]">
-          Below are a few examples of my work, you can find more on my Github or on the work page of this site.
-        </h1>
-
-        <div className='w-[95vw] flex flex-row space-x-2 overflow-x-scroll pb-3 scroll-container'>
+        <motion.div 
+          className='w-[95vw] max-w-[1050px] flex flex-row overflow-x-scroll pb-3 scroll-container shadow-lg rounded-md h-fit'
+          variants={{
+            initial: { opacity: 0, },
+            animate: { opacity: 1, 
+              transition: { staggerChildren: 0.2 }
+            }
+          }}
+          initial='initial'
+          animate='animate'>
           {Object.keys(projectsData).map((key, indx) => {
             if (projectsData[key].status === 'working') {
               return (
@@ -41,7 +54,7 @@ export default function ProjectSection() {
               <></>
             )}
           })}
-        </div>
+        </motion.div>
         
     </div>
   )

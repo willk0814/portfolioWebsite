@@ -49,6 +49,11 @@
 }
 
 /* Home Screen Scrollbar Styles */
+.scroll-container {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #121212 2%, #121212 98%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #121212 2%, #121212 98%, transparent 100%);
+}
+
 .scroll-container::-webkit-scrollbar {
   height: 10px;
 }

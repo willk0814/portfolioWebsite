@@ -15,11 +15,11 @@ export default function Home() {
     <div>
         <PrimaryNav />
         <TitleScreen />
-        <AboutMeSection />
         <ProjectSection />
         <ExperienceSection />
         <EducationScreen />
         <SkillsScreen />
+        <AboutMeSection />
         <ContactSection />
         <Footer />
 
