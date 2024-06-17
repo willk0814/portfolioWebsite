@@ -20,9 +20,9 @@ export default function AboutMeSection() {
           className='rounded-full border-4 border-[#A2D0AC]'/>
 
         <div className='bg-[#E8E8E8] w-[95vw] max-w-[450px] rounded-lg p-2 m-4'>
-          <h1 className='text-wrap secondaryText'>I am a passionate Software Engineer with experience building Full-Stack applications in JavaScript as well as developing Machine Learning Models in Python.  As I continue my growth both personal and professional I am always looking for new challenges that I can apply all that I am continuosly learning to.</h1>
+          <h1 className='text-wrap secondaryText'>Now that you have seen some of my projects, read about my work experience and education, and seen some of the technologies I like to work with I figure it is a good time to introduce myself.  I am a passionate full-stack software engineer; I love developing technology that users enjoy interacting with and take some value from.</h1>
 
-          <h1 className='text-wrap secondaryText pt-3'>Thank you for taking the time to check out my portfolio.  Scroll this page for more info about me and then visit the others for more detailed information.</h1>
+          <h1 className='text-wrap secondaryText pt-3'>Thank you for taking the time to scroll through my portfolio, I hope you enjoyed it.</h1>
         </div>
       </div>
     </div>
