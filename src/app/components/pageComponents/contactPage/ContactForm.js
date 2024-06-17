@@ -12,7 +12,7 @@ export const FormDataSchema = z.object({
   name: z.string().min(1, 'Name is required'),
   email: z.string().email(2, 'Please enter a valid email'),
   subject: z.string().min(1, 'Subject is required'),
-  message: z.string().min(10, 'Message must be at least 10 chars.'),
+  message: z.string().min(10, 'Min 10 chars'),
 })
 
 
