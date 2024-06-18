@@ -39,7 +39,7 @@ function ProjectCard ({ projectData }) {
             <h1 className='secondaryText'>
               {projectData.content.length > 50 ? 
                 projectData.content.slice(0, 50) + '...' : projectData.content}
-          </h1>
+            </h1>
         </div>
       </Link>
     </motion.div>
@@ -55,7 +55,7 @@ export default function ProjectSection() {
           variants={{
             initial: { opacity: 0, },
             animate: { opacity: 1, 
-              transition: { staggerChildren: 0.4, delay: 0.4 }
+              transition: { staggerChildren: 0.4, delay: 0.7 }
             }
           }}
           initial='initial'

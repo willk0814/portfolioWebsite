@@ -12,8 +12,23 @@ import { HiOutlineDocumentText } from 'react-icons/hi'
 
 export default function LinkBar() {
   return (
-    <div className='hidden sm:flex flex-row space-x-2'>
+    <motion.div 
+        className='hidden sm:flex flex-row space-x-2'
+        variants={{
+            initial: { opacity: 0, y: 30},
+            animate: { opacity: 1, y: 0,
+              transition: { duration: 0.7, delay: 0.3, staggerChildren: 0.3}
+            }
+          }}
+          initial='initial'
+          animate='animate'>
         <motion.a
+            variants={{
+                initial: { opacity: 0, y: 30},
+                animate: { opacity: 1, y: 0,
+                  transition: { duration: 0.7}
+                }
+              }}
             href='https://github.com/willk0814' 
             target='_blank'
             rel='noreferrer'
@@ -27,6 +42,12 @@ export default function LinkBar() {
         </motion.a>
 
         <motion.a
+            variants={{
+                initial: { opacity: 0, y: 30},
+                animate: { opacity: 1, y: 0,
+                  transition: { duration: 0.7}
+                }
+              }}
             href='https://linkedin.com/in/will-koenig' 
             target='_blank'
             rel='noreferrer'
@@ -40,6 +61,12 @@ export default function LinkBar() {
         </motion.a>
 
         <motion.a
+            variants={{
+                initial: { opacity: 0, y: 30},
+                animate: { opacity: 1, y: 0,
+                transition: { duration: 0.7}
+                }
+            }}
             href={'/KoenigResume.pdf'}
             target='_blank'
             rel='noreferrer'
@@ -51,6 +78,6 @@ export default function LinkBar() {
                 <HiOutlineDocumentText size={45} className='primaryText'/>
             </motion.div>
         </motion.a>
-    </div> 
+    </motion.div> 
   )
 }
