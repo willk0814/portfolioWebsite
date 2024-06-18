@@ -17,7 +17,7 @@ export default function LinkBar() {
         variants={{
             initial: { opacity: 0, y: 30},
             animate: { opacity: 1, y: 0,
-              transition: { duration: 0.7, delay: 0.3, staggerChildren: 0.3}
+              transition: { duration: 0.7, delay: 0.3, staggerChildren: 0.1}
             }
           }}
           initial='initial'
