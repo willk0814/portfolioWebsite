@@ -5,6 +5,7 @@ import { projectsData } from '../../../../assets/projectsData'
 import HomeTechnologyBar from './HomeTechnnologyBar'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function ProjectCard ({ projectData }) {
   return (
@@ -20,13 +21,24 @@ function ProjectCard ({ projectData }) {
       <Link
         href={projectData.link}
         className='p-2 h-full flex flex-col justify-between'>
-        <h1 className='secondaryText text-2xl'>{projectData.title}</h1>
+        {/* <h1 className='secondaryText text-2xl'>{projectData.title}</h1> */}
+
+          <div className='relative rounded-t-lg w-full h-[80%]'>
+            <Image 
+              alt='Failed to Load'
+              src={projectData.image_link}
+              fill={true}
+              className='rounded-lg z-0'/>
+            <div className='secondaryBg z-9 absolute top-0 left-0 p-2 rounded-br-lg'>
+              <h1 className='text-xl secondaryText'>{projectData.title}</h1>
+            </div>
+          </div>
         
-          <div>
+          <div className='pt-2'>
             <HomeTechnologyBar stack={projectData.stack} full={false} />
             <h1 className='secondaryText'>
-              {projectData.content.length > 60 ? 
-                projectData.content.slice(0, 60) + '...' : projectData.content}
+              {projectData.content.length > 50 ? 
+                projectData.content.slice(0, 50) + '...' : projectData.content}
           </h1>
         </div>
       </Link>
