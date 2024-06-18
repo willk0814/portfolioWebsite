@@ -55,7 +55,7 @@ export default function ProjectSection() {
           variants={{
             initial: { opacity: 0, },
             animate: { opacity: 1, 
-              transition: { staggerChildren: 0.4, delay: 0.7, when:'beforeChildren' }
+              transition: { staggerChildren: 0.4, delay: 0.5, when:'beforeChildren' }
             }
           }}
           initial='initial'
