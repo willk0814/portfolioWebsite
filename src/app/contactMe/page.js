@@ -8,7 +8,7 @@ export default function page() {
   return (
     
     <div 
-      className='w-full min-h-screen flex flex-col py-20 items-center justify-start secondaryBg'>
+      className='w-[100vw] min-h-screen flex flex-col py-20 items-center justify-start secondaryBg'>
         <ContactForm />
     </div>
 

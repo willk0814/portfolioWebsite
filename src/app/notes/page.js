@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function page() {
   return (
     <div 
-      className='w-full min-h-[70vh] flex flex-col items-center justify-start py-20 secondaryBg'>
+      className='w-[100vw] min-h-[70vh] flex flex-col items-center justify-start py-20 secondaryBg'>
         <motion.h1 
           className='text-7xl sm:text-8xl secondaryText'
           variants={{

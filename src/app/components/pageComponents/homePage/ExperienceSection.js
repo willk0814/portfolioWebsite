@@ -92,7 +92,7 @@ export default function ExperienceSection() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start w-full primaryBg py-10">
+    <div className="flex flex-col items-center justify-start w-[100vw] primaryBg py-10">
         <h1 className="text-[3.5rem] sm:text-8xl primaryText mb-3">Experience</h1>
 
         <div className='flex flex-col justify-center'>

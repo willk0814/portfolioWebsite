@@ -20,7 +20,7 @@ function EducationCard({ educationData }) {
 
 export default function EducationScreen() {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-[65vh] primaryBg py-4">
+    <div className="flex flex-col items-center justify-center w-[100vw] min-h-[65vh] primaryBg py-4">
         <h1 className="text-[4rem] sm:text-8xl primaryText mb-3">Education</h1>
 
         <div className='flex flex-wrap justify-center'>

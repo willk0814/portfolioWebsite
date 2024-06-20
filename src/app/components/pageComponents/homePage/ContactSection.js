@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function ContactSection() {
   
   return (
-    <div className='flex items-center justify-center w-full h-[45vh] primaryBg py-10'>
+    <div className='flex items-center justify-center w-[100vw] h-[45vh] primaryBg py-10'>
         
         {/* Link to contact page */}
         <motion.div
