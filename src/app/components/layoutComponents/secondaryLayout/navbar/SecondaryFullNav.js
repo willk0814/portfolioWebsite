@@ -71,14 +71,14 @@ export default function SecondaryFullNav() {
                     onHoverEnd={() => setWorkHovered(false)}
                     className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-[#A2D0AC]'
                     variants={containerVariants}
-                    animate={`${pathname === '/work' ? 'hover' : ''}`}
+                    animate={`${pathname.includes('/work') ? 'hover' : ''}`}
                     initial='initial'
                     whileHover='hover'>
                     <motion.div>
                         <FaBriefcase size={'35px'} color={'#121212'}/>
                     </motion.div>
 
-                    {(workHovered || pathname === '/work') && 
+                    {(workHovered || pathname.includes('/work')) && 
                         <motion.h1
                             className='text-xl font-bold secondaryText'
                             variants={textVariants}
@@ -97,7 +97,7 @@ export default function SecondaryFullNav() {
                     onHoverEnd={() => setNotesHovered(false)}
                     className='flex flex-row items-center justify-between px-[12px] py-2 rounded-lg bg-[#A2D0AC]'
                     variants={containerVariants}
-                    animate={(pathname === '/notes' || notesHovered) ? 'hover' : ''}
+                    animate={(pathname.includes('/notes') || notesHovered) ? 'hover' : ''}
                     initial='initial'
                     // whileHover='hover'
                     >
@@ -105,7 +105,7 @@ export default function SecondaryFullNav() {
                         <FaNoteSticky size={'35px'} color={'#121212'}/>
                     </motion.div>
 
-                    {(notesHovered || pathname === '/notes') && 
+                    {(notesHovered || pathname.includes('/notes')) && 
                         <motion.h1
                         className='text-xl font-bold secondaryText'
                         variants={textVariants}
