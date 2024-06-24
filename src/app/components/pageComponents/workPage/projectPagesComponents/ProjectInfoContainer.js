@@ -71,7 +71,7 @@ export default function ProjectInfoContainer({ projectData }) {
           }, [])
   return (
     <div 
-    className='flex flex-col items-center justify-start py-20 w-full min-h-[70vh] secondaryBg'>
+    className='flex flex-col items-center justify-start py-20 w-[100vw] min-h-[70vh] secondaryBg'>
         <div className='mb-2'>
             <h1 className='text-4xl secondaryText'>{projectData.title}</h1>
         </div>
@@ -129,15 +129,16 @@ export default function ProjectInfoContainer({ projectData }) {
                         <h1 className='text-2xl secondaryText'>Links</h1>
 
                         <div className='flex flex-row space-x-2'>
+                            {projectData.repo_link !== '' &&
                             <motion.a
                                 href={projectData.repo_link}
                                 target='_blank'
                                 rel='noreferrer'
                                 className='cursor-pointer flex flex-row items-center primaryBg rounded-lg p-2'
-                                whileHover = {{ boxShadow: '0px 0px 20px rgb(38, 99, 235)'}}>
+                                whileHover = {{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                                     <AiFillGithub size={30} className='primaryText'/>
                                     <h1 className='primaryText text-xl ml-2'>Repo</h1>
-                            </motion.a>
+                            </motion.a>}
 
                             {/* Demo Link */}
                             {projectData.demo_link !== '' &&
@@ -146,7 +147,7 @@ export default function ProjectInfoContainer({ projectData }) {
                                 target='_blank'
                                 rel='noreferrer'
                                 className='cursor-pointer flex flex-row items-center  primaryBg rounded-lg p-2'
-                                whileHover = {{ boxShadow: '0px 0px 20px rgb(38, 99, 235)'}}>
+                                whileHover = {{ boxShadow: '0 0 10px 5px rgba(18, 18, 18, 0.5)' }}>
                                     <CgWebsite size={30} className='primaryText'/>
                                     <h1 className='primaryText text-xl ml-2'>Demo</h1>
                                 </motion.a>
@@ -162,8 +163,17 @@ export default function ProjectInfoContainer({ projectData }) {
                 
                 <div className='flex flex-col space-y-1'>
                     <h1 className='text-2xl secondaryText'>Description</h1>
-                    <h1 className='text secondaryText'>{projectData.content}</h1>
+                    <h1 className='secondaryText font-semibold'>{projectData.content}</h1>
                 </div>
+
+                {projectData.extendedContent && 
+                    <>
+                        <div className='w-[100%] h-[3px] bg-[#121212]'></div>
+
+                        <div>
+                            <h1 className='secondaryText'>{projectData.extendedContent}</h1>    
+                        </div>
+                    </>}
             </motion.div>
         </motion.div>
     </div>

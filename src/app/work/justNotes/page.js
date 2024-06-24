@@ -5,7 +5,7 @@ import ProjectInfoContainer from '@/app/components/pageComponents/workPage/proje
 
 export default function page() {
 
-  const PROJ_ID = 'project_2'
+  const PROJ_ID = 'justNotes'
   const data = projectsData[PROJ_ID]
 
   return (
