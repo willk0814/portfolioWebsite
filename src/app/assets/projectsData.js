@@ -81,7 +81,7 @@ export const projectsData = {
         title: 'Personal Portfolio',
         content: 'This website!  I built this website from scratch and I am continuing to add new features all the time.',
         repo_link: 'https://github.com/willk0814/portfolioWebsite',
-        demo_link: 'willkoenig.info',
+        demo_link: 'https://www.willkoenig.info/',
         video_id: '',
         stack: ['JS', 'React', 'node', 'tailwind', 'framer'],
         status: 'working',
