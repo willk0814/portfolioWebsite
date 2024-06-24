@@ -135,76 +135,76 @@ export default function WorkTechBar({ stack, full }) {
     }, [stack, full]);
   return (
     <div className='flex flex-row flex-wrap items-start'>
-        {react && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaReact size={18} className='secondaryText'/>
+        {react && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaReact size={25} className='primaryText'/>
         </div>}
 
-        {python && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPython size={18} className='secondaryText' />
+        {python && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPython size={25} className='primaryText' />
         </div>}
 
-        {reactNative && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <TbBrandReactNative size={18} className='secondaryText' />
+        {reactNative && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <TbBrandReactNative size={25} className='primaryText' />
         </div>}
 
-        {mongoDB && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiMongodb size={18} className='secondaryText' />
+        {mongoDB && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiMongodb size={25} className='primaryText' />
         </div>}
 
-        {tailwind && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTailwindcss size={18} className='secondaryText' />
+        {tailwind && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTailwindcss size={25} className='primaryText' />
         </div>}
 
-        {JS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <IoLogoJavascript size={18} className='secondaryText' />
+        {JS && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <IoLogoJavascript size={25} className='primaryText' />
         </div>}
 
-        {TS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTypescript size={18} className='secondaryText' />
+        {TS && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTypescript size={25} className='primaryText' />
         </div>}
 
-        {pyTorch && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPytorch size={18} className='secondaryText' />
+        {pyTorch && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPytorch size={25} className='primaryText' />
         </div>}
 
-        {tensorFlow && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiTensorflow size={18} className='secondaryText' />
+        {tensorFlow && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiTensorflow size={25} className='primaryText' />
         </div>}
 
-        {numPy && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiNumpy size={18} className='secondaryText' />
+        {numPy && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiNumpy size={25} className='primaryText' />
         </div>}
 
-        {pandas && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiPandas size={18} className='secondaryText' />
+        {pandas && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiPandas size={25} className='primaryText' />
         </div>}
 
-        {jupyter && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiJupyter size={18} className='secondaryText' />
+        {jupyter && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiJupyter size={25} className='primaryText' />
         </div>}
         
-        {CSS && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <IoLogoCss3 size={18} className='secondaryText' />
+        {CSS && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <IoLogoCss3 size={25} className='primaryText' />
         </div>}
 
-        {HTML && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaHtml5 size={18} className='secondaryText' />
+        {HTML && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaHtml5 size={25} className='primaryText' />
         </div>}
 
-        {node && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <FaNodeJs size={18} className='secondaryText' />
+        {node && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <FaNodeJs size={25} className='primaryText' />
         </div>}
 
-        {framer && <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiFramer size={18} className='secondaryText' />
+        {framer && <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiFramer size={25} className='primaryText' />
         </div>}
 
-        {express &&  <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiExpress size={18} className='secondaryText' />
+        {express &&  <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiExpress size={25} className='primaryText' />
         </div>}
 
-        {mongoose &&  <div className='secondaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
-            <SiMongoose size={18} className='secondaryText' />
+        {mongoose &&  <div className='primaryBg w-fit items-start p-1 mr-1 mb-1 rounded-lg'>
+            <SiMongoose size={25} className='primaryText' />
         </div>}
 
         {overflow && <div className='flex w-fit items-start mr-1  mb-1 rounded-lg font-bold'>
