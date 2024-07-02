@@ -9,9 +9,9 @@ import YouTube from 'react-youtube';
 
 import ProjectTechBar from './ProjectTechBar'
 
-export default function ProjectInfoContainer({ projectData }) {
+export default function ProjectInfoContainer({ projectData, children }) {
 
-    const [playerSize, setPlayerSize] = useState('md')
+    const [playerSize, setPlayerSize] = useState()
 
 
     const smPlayerOpts = {
@@ -82,7 +82,7 @@ export default function ProjectInfoContainer({ projectData }) {
                 initial: { opacity: 0 },
                 animate: { opacity: 1,
                     transition: {
-                        staggerChildren: 0.6
+                        
                     }}
              }}
              initial='initial'
@@ -118,15 +118,15 @@ export default function ProjectInfoContainer({ projectData }) {
 
             <motion.div 
                 variants={{
-                    initial: { opacity: 0, y: '5%' },
+                    initial: { opacity: 0, y: '15%' },
                     animate: { opacity: 1, y: 0,
-                        transition: { duration: 0.6}}
+                        transition: { delay: 0.7, duration: 0.6 }}
                 }}
-                className='flex flex-col w-[95vw] max-w-[1000px] space-y-2 m-2'>
+                className='flex flex-col w-[95vw] max-w-[1000px] space-y-3 m-2'>
                 
-                <div className='flex flex-col space-y-2 sm:space-y-0 sm:flex-row justify-between'>
+                <div className='flex flex-col space-y-3 sm:space-y-0 sm:flex-row justify-between'>
                     <div className='flex flex-col space-y-1'>
-                        <h1 className='text-2xl secondaryText'>Links</h1>
+                        <h1 className='text-3xl secondaryText'>Links</h1>
 
                         <div className='flex flex-row space-x-2'>
                             {projectData.repo_link !== '' &&
@@ -155,25 +155,17 @@ export default function ProjectInfoContainer({ projectData }) {
                         </div>
                     </div>
                     <div className='flex flex-col space-y-1 sm:items-end'>
-                        <h1 className='text-2xl secondaryText'>Stack</h1>
+                        <h1 className='text-3xl secondaryText'>Stack</h1>
                         <ProjectTechBar stack={projectData.stack} full={true} />
                     </div>
                 </div>
                 
                 
-                <div className='flex flex-col space-y-1'>
-                    <h1 className='text-2xl secondaryText'>Description</h1>
-                    <h1 className='secondaryText font-semibold'>{projectData.content}</h1>
+                <div className='flex rounded-md primaryBg p-2'>
+                    <h1 className='primaryTexts text-md font-semibold'>{projectData.content}</h1>
                 </div>
 
-                {projectData.extendedContent && 
-                    <>
-                        <div className='w-[100%] h-[3px] bg-[#121212]'></div>
-
-                        <div>
-                            <h1 className='secondaryText'>{projectData.extendedContent}</h1>    
-                        </div>
-                    </>}
+                {children}
             </motion.div>
         </motion.div>
     </div>

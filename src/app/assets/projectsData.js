@@ -14,10 +14,10 @@ export const projectsData = {
         title: 'Music Dashboard',
         content: 'A full stack react app that keeps track of the music that I listen to and displays trends in the data',
         extendedContent: "I built this application because I love listening to music, but I feel like whenever someone asks me 'What have you been listening to?'  I never know.  Well now I don't have to know and I can just refer them to this site. \nI also built this project because I wanted to further my skills in building from end to end with AWS.  I made an effort to illustrate an understanding of as many different AWS technologies as was necessary throughout this project.  I hosted the front end with Vercel, managed the APIs with AWS API Gateway, implemented the APIs with lambda functions, used an EC2 instance to routinely gather data from Spotify, to be stored in a DynamoDB instance.",
-        repo_link: '',
+        repo_link: 'https://github.com/willk0814/musicDashboard_backend',
         demo_link: '',
         video_id: '',
-        stack: ['React', 'JS', 'Next.js'],
+        stack: ['React', 'JS', 'Next.js', 'node', 'tailwind', 'Express'],
         status: 'working',
         link: '/work/musicDashboard',
         image_link: '/projCoverPhotos/musicDashboard.png'
