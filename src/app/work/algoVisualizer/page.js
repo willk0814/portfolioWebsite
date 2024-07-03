@@ -22,7 +22,7 @@ export default function page() {
           <div className='flex flex-col space-y-1'>
             <h1 className='text-3xl secondaryText'>The Project</h1>
             <div className='w-full h-[3px] rounded-full primaryBg'></div>
-            <h1 className='text-md secondaryText font-semibold'>I built this project completely in JavaScript using React.JS, Next.JS, and TailwindCSS.  This project allows the user to visualize the decisions made by a number of popular sorting and pathfinding algorithms.  Hopefully by witnessing how these algorithms behave it becomes easier for you to make sense of their implementation.</h1>
+            <h1 className='text-md secondaryText font-semibold'>I built this project completely in JavaScript using React.JS, Next.JS, and TailwindCSS.  This project allows the user to visualize the decisions made by a number of popular sorting and pathfinding algorithms.  Hopefully by witnessing how these algorithms behave it becomes fieasier for you to make sense of their implementation.</h1>
           </div>
 
         </div>

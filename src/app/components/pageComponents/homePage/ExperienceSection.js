@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { experienceData } from '../../../assets/experienceData'
-import { motion } from 'framer-motion'
+import { animate, motion, useInView } from 'framer-motion'
 
 import { FaArrowCircleDown } from 'react-icons/fa'
 
@@ -76,6 +76,9 @@ export default function ExperienceSection() {
     exp_3: false
   })
 
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true })
+
   const handleExpand = (exp_id) => {
     const newExpandedState = {}
 
@@ -95,16 +98,33 @@ export default function ExperienceSection() {
     <div className="flex flex-col items-center justify-start w-[100vw] primaryBg py-10">
         <h1 className="text-[3.5rem] sm:text-8xl primaryText mb-3">Experience</h1>
 
-        <div className='flex flex-col justify-center'>
+        <motion.div 
+          className='flex flex-col justify-center'
+          variants={{
+            initial: { opacity: 0, x: '-10%' },
+            animate: { opacity: 1, x: '0',
+              transition: { staggerChildren: 0.2 }
+             }
+          }}
+          initial='initial'
+          animate={inView ? 'animate': 'initial'}>
             {Object.keys(experienceData).map((key, indx) => (
-              <ExperienceCard
-                key={indx}
-                exp_id={key}
-                experienceData={experienceData[key]}
-                expanded={expandedState[key]}
-                handleExpand={handleExpand} />
-            ))}
-        </div>
+              <motion.div
+                className='flex'
+                variants={{
+                  initial: { opacity: 0, x: '-10%' },
+                  animate: { opacity: 1, x: '0' }
+                }}>
+                <ExperienceCard
+                  key={indx}
+                  exp_id={key}
+                  experienceData={experienceData[key]}
+                  expanded={expandedState[key]}
+                  handleExpand={handleExpand} />
+              </motion.div>
+              ))}
+            <div ref={ref}></div>
+        </motion.div>
     </div>
   )
 }
