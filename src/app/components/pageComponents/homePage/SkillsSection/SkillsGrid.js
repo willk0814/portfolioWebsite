@@ -21,27 +21,24 @@ import { IoLogoCss3 } from "react-icons/io";
 export default function SkillsGrid() {
 
     const ref = useRef(null)
+    // const inView = useInView(ref)
     const inView = useInView(ref, { once: true })
   return (
     <motion.div
         variants={{
             initial: { opacity: 0 },
             animate: { opacity: 1,
-                transition: { staggerChildren: 0.1 }
+                transition: { staggerChildren: 0.05 }
             }
         }}
         initial='initial'
         animate={inView ? 'animate' : 'initial'} 
         className='flex flex-wrap items-center justify-center w-[95vw] max-w-[800px]'>
         
-        <motion.div 
-            variants={{
-                initial: { scale: 0 },
-                animate: { scale: 1 }
-            }}
+        <div
             className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
             <h1 className='text-[2rem] text-[#A2D0AC]'>Languages</h1>  
-        </motion.div>
+        </div>
 
         <motion.div 
             variants={{
@@ -97,9 +94,9 @@ export default function SkillsGrid() {
             <TbBrandCpp size={35} className='primaryText' />
         </motion.div>
 
-        <motion.div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
+        <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
             <h1 className='text-[2rem] text-[#A2D0AC]'>Front End</h1>  
-        </motion.div>
+        </div>
 
         <motion.div 
             variants={{
@@ -155,9 +152,9 @@ export default function SkillsGrid() {
             <SiTailwindcss size={35} className='primaryText' />
         </motion.div>
 
-        <motion.div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
+        <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
             <h1 className='text-[2rem] text-[#A2D0AC]'>Back End</h1>  
-        </motion.div>
+        </div>
 
         <motion.div 
             variants={{
@@ -195,9 +192,9 @@ export default function SkillsGrid() {
             <SiMongoose size={35} className='primaryText' />
         </motion.div>
 
-        <motion.div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
+        <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
             <h1 className='text-[2rem] text-[#A2D0AC]'>Databasing</h1>  
-        </motion.div>
+        </div>
 
         <motion.div 
             variants={{
@@ -226,9 +223,9 @@ export default function SkillsGrid() {
             <BiLogoPostgresql size={35} className='primaryText' />
         </motion.div>
 
-        <motion.div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
+        <div className='primaryBg border-2 border-[#E8E8E8] p-3 rounded-lg m-1 flex flex-grow'>
             <h1 className='text-[2rem] text-[#A2D0AC]'>AI/ML</h1>  
-        </motion.div>
+        </div>
 
         <motion.div 
             variants={{
