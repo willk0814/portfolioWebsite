@@ -57,7 +57,7 @@ export default function SecondaryFullNav() {
     <div className='flex flex-row w-[95%] h-full justify-between items-center'>
             
         <Link
-            className='text-4xl secondaryText'
+            className='text-3xl secondaryText font-bold'
             href={'/'}>Will Koenig
         </Link>
         
