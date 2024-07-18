@@ -14,7 +14,7 @@ export default function SecondaryMobileNav() {
 
         <Link
             href={'/'}>
-            <h1 className='text-[#121212] text-xl font-bold'>Will Koenig</h1>
+            <h1 className='text-[#121212] text-2xl'>Will Koenig</h1>
         </Link>
 
 
