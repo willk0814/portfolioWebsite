@@ -22,6 +22,17 @@ export const projectsData = {
         link: '/work/musicDashboard',
         image_link: '/projCoverPhotos/musicDashboard.png'
         },
+    'cronCalc' : {
+        title: 'Cron Syntax Helper',
+        content: 'A static website deployed in an AWS s3 bucket that can check users cron strings to ensure they function properly',
+        repo_link: 'https://github.com/willk0814/cron-calc',
+        demo_link: '',
+        video_id: '',
+        stack: ['TS', 'React', 'tailwind', 'node'],
+        status: 'working',
+        link: '/work/cronCalc',
+        image_link: '/projCoverPhotos/cronCalc.jpg'
+    },
     'justNotes': {
         title: 'Just Notes',
         content: 'A full stack note-taking application developed with the MERN stack.  I implemented all necessary functionalities for note-taking, authenitcation, and security.',
