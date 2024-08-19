@@ -2,13 +2,13 @@ export const projectsData = {
     'deviceController' : {
         title: 'Device Controller',
         content: 'A React Native application deployed to iPads throughout the lab as well as delivered to a fortune 500 client.  The application allowed researchers to interact with multiple research devices via bluetooth in order to run different tests and harvest, preprocess, and export results.',
-        repo_link: 'https://github.com/willk0814/DeviceControllerApp',
+        repo_link: '',
         demo_link: '',
         video_id: 'vc_H3_WQKBI',
         stack: ['JS', 'CSS', 'ReactNative'],
         status: 'working',
         link: '/work/deviceController',
-        image_link: '/projCoverPhotos/deviceController.png'
+        // image_link: '/projCoverPhotos/deviceController.png'
         },
     'musicDashboard' : {
         title: 'Music Dashboard',

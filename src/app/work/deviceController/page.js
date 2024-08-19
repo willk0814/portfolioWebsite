@@ -11,7 +11,7 @@ export default function page() {
   return (
     <div>
       <ProjectInfoContainer projectData={data}>
-        <div className='flex flex-col space-y-3'>
+        {/* <div className='flex flex-col space-y-3'>
           
           <div className='flex flex-col space-y-1'>
             <h1 className='text-3xl secondaryText'>Description</h1>
@@ -37,7 +37,7 @@ export default function page() {
             <div className='w-full h-[3px] rounded-full primaryBg'></div>
             <h1 className='text-md secondaryText'>I am truly proud of the results that my team and I was able to achieve while working on this project.  Once we deployed a developement build to all of the iPads around the lab the researchers were testing plants at a rate 3x that of the prior model.  They also found that they were running into signifcantly less problems with their data as the layout had been standardized and they were able to spot faulty tests with the preview graph that our application provided.</h1>
           </div>
-        </div>
+        </div> */}
       </ProjectInfoContainer>
     </div>
   )
